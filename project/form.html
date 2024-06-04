@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form | Canadian XP</title>
+    <meta name="description" content="This website is dedicated to the learning process for the course WDD 131 - Dynamic Web Fundamentals. This website development project focuses on creating a site for a hypothetical tourism company in Canada. The goal of the website is to showcase the trip packages the company offers and highlight the main famous tourist spots covered by the company in Canada.">
+    <meta name="author" content="Adson Mettler do Nascimento">
+    <link rel="stylesheet" href="styles/canadianxp.css">
+    <link rel="stylesheet" href="styles/canadianxp-large.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/canadianxp.js"></script>
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <!-- NAVIGATION -->
+        <div class="image-logo">
+            <img src="images/canadianxp-logo-2.webp" alt="logomarca Adson" width="70">
+        </div>
+        <button id="menu"> Menu</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://adsonmettler.github.io/wdd131/project/index.html" id="home">Home</a></li>
+                <li><a href="https://adsonmettler.github.io/wdd131/project/trips.html" id="trips">Trips</a></li>
+                <li><a href="https://adsonmettler.github.io/wdd131/project/form.html" id="form" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Form -->
+        <form method="get" action="thanks.html" class="wf1">
+            <h2>Book Your Experience</h2>
+            <fieldset>
+
+                <label>Full Name <input type="text" id="name" name="fname" placeholder="Your Name" required></label>
+                <label>Email <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Phone <input type="tel" id="tel" name="phone" placeholder="3334445555" required></label>
+
+                <label>Chose Your Route 
+                 <select name="route" required>
+                 <option value="">Select a Route &#9662;</option>
+
+                  </select>
+                 </label>
+
+                 <label>How Many People <input type="number" name="people"></label>
+
+             
+             <label>Expected Date <input type="date" name="completeDate"></label>
+
+             <label>Which of those you already planned? (Check all that apply)</label>
+                <label><input type="checkbox" id="accomodation" name="planned" value="yes"> Accomodation</label>
+                <label><input type="checkbox" id="flight" name="planned" value="yes"> Flight</label>
+                <label><input type="checkbox" id="performance" name="planned" value="yes"> Car Rental</label>
+
+             <label>Tell us more about your trip. What is your goal, who will be with you, are you celebrating an special date, etc? (Optional) <textarea id="comment" name="comment"></textarea></label>
+             
+             
+                
+            </fieldset>
+
+            <!-- BUTTON -->
+
+            <input type="submit" value="Request Your Booking">
+        
+        </form>
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p id="year">&copy; <span class="highlight">YYYY</span> Adson Mettler do Nascimento | Toronto, Canada</p>
+        <p id="lastModifiedDate" class="highlight">Last modified: </p>
+    </footer>
+</body>
+</html>

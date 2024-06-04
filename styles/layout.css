@@ -1,0 +1,117 @@
+:root {
+	--primary-color: #00c6fb;
+  --secondary-color: #001720;
+  --accent1-color: #e3a10f;
+	--accent2-color: #144351;
+	--accent3-color: #ffffff;
+}
+
+/*----------- BODY --------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    background-color: var(--secondary-color);
+}
+
+header, main {
+    margin: auto;
+}
+
+/*----------- HEADER --------------*/
+
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-gap: 1rem;
+    padding-left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px #050505;
+    color: var(--secondary-color);
+}
+
+header h1 {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.navigation {
+    display: none;
+}
+
+/* Small view navigation and BUTTON hamburguer menu */
+
+.image-logo {
+    margin-top: 10px;
+}
+
+
+#menu {
+	font-size: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: 300;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+/* ▼ */
+
+#menu.open::before {
+	content: "☰";
+    color: #f59432;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.navigation.open {
+	display: block;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- HERO SECTION --------------*/
+
+
+
+/*----------- CARDS SECTION --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+
+

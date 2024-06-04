@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips | Canadian XP</title>
+    <meta name="description" content="This website is dedicated to the learning process for the course WDD 131 - Dynamic Web Fundamentals. This website development project focuses on creating a site for a hypothetical tourism company in Canada. The goal of the website is to showcase the trip packages the company offers and highlight the main famous tourist spots covered by the company in Canada.">
+    <meta name="author" content="Adson Mettler do Nascimento">
+    <link rel="stylesheet" href="styles/canadianxp.css">
+    <link rel="stylesheet" href="styles/canadianxp-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/canadianxp.js"></script>
+</head>
+<body>
+    <header>
+        <!-- NAVIGATION -->
+        <div class="image-logo">
+            <img src="images/canadianxp-logo-2.webp" alt="logomarca Adson" width="70">
+        </div>
+        <button id="menu"> Menu</button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://adsonmettler.github.io/wdd131/project/index.html" id="home">Home</a></li>
+                <li><a href="https://adsonmettler.github.io/wdd131/project/trips.html" id="trips">Trips</a></li>
+                <li><a href="https://adsonmettler.github.io/wdd131/project/form.html" id="form" class="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Filter Menu -->
+        <section class="filter-menu">
+            
+            <h3 class="subtitle">Explore All Trips Available</h3>
+            <div class="filters">
+                <label for="provinceFilter">Province: </label>
+                <select id="provinceFilter">
+                    <option value="all">All Selected</option>
+                    <option value="Alberta">Alberta</option>
+                    <option value="British Columbia">British Columbia</option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="Quebec">Quebec</option>
+                    <option value="New Brunswick">New Brunswick</option>
+                </select>
+            
+                <label for="durationFilter">Duration: </label>
+                <select id="durationFilter">
+                    <option value="all">All Selected</option>
+                    <option value="morethan3days">More than 3 days</option>
+                </select>
+            
+                <label for="typeFilter">Type: </label>
+                <select id="typeFilter">
+                    <option value="all">All Selected</option>
+                    <option value="outdoor">Outdoor</option>
+                    <option value="indoor">Indoor</option>
+                </select>
+            </div>
+        </section>
+
+        
+
+
+        <!-- CARDS SECTION | Filtered Trips -->
+        <section class="card-container">
+            <h2 class="title-border">CANADIAN XP TRIPS</h2>
+            <div class="card-grid">
+                <section class="card-content">
+    
+                    <div class="image">
+                        <img src="images/banff-lake-2-2x3.webp" alt="Adson Mettler profile photo" width="150" loading="lazy">
+                    </div>
+    
+                    <h2>Banff Route</h2>
+    
+                        <div class="text">
+                            <h3>
+                                The Canadian Rockies
+                            </h3>
+                            <h4>
+                                Explore the stunning landscapes of Banff National Park.
+                            </h4>
+                            <h3>Location: Banff, Alberta</h3>
+                            <h3>Itinerary: 3 days</h3>
+                            <p>
+                                🗸 <span class="highlight">Day 1: </span> Arrival and Exploration
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 2: </span> Adventure and Relaxation
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 3: </span> Scenic Drives and Wildlife Watching
+                            </p>
+                            <h3>Accommodation Options</h3>
+                            <p>
+                                📍 <span class="highlight">Banff Park Lodge: </span> Centrally located
+                            </p>
+                            <p>
+                                📍 <span class="highlight">Banff International Hostel: </span> For budget travelers
+                            </p>
+                            <p>
+                                📍 <span class="highlight">Buffalo Mountain Lodge: </span> Located on Tunnel Mountain
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/form.html" class="button-1">Start Booking</a>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/trips.html" class="button-2">View More Trips</a>
+                        </div>
+                        
+                </section>
+                <section class="card-content">
+        
+                    <div class="image">
+                        <img src="images/vancouver-1-2x3.webp" alt="Adson Mettler profile photo" width="150" loading="lazy">
+                    </div>
+    
+                    <h2>Vancouver Route</h2>
+    
+                        <div class="text">
+                            <h3>
+                                Western Canada
+                            </h3>
+                            <h4>
+                                Where urban sophistication meets outdoor adventure!.
+                            </h4>
+                            <h3>Location: Vancouver, British Columbia</h3>
+                            <h3>Itinerary: 4 days</h3>
+                            <p>
+                                🗸 <span class="highlight">Day 1: </span> Urban Exploration and Waterfront Views
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 2: </span> Nature and Culture
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 3: </span> Local Flavors and Scenic Views
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 4: </span> Day Trip to Whistler
+                            </p>
+                            <h3>Accommodation Options</h3>
+                            <p>
+                                📍 <span class="highlight">Fairmont Pacific Rim: </span> Stunning waterfront views
+                            </p>
+                            <p>
+                                📍 <span class="highlight">The Burrard: </span> Trendy, retro-chic design
+                            </p>
+                            <p>
+                                📍 <span class="highlight">HI Vancouver Downtown Hostel: </span> Budget-friendly
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/form.html" class="button-1">Start Booking</a>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/trips.html" class="button-2">View More Trips</a>
+                        </div>
+                    
+                </section>
+                <section class="card-content">
+        
+                    <div class="image">
+                        <img src="images/toronto-cn-tower-2x3.webp" alt="Adson Mettler profile photo" width="150" loading="lazy">
+                    </div>
+    
+                    <h2>Toronto Route</h2>
+    
+                        <div class="text">
+                            <h3>
+                                The Canadian Rockies
+                            </h3>
+                            <h4>
+                                Vibrant city life.
+                            </h4>
+                            <h3>Location: Toronto, Ontario</h3>
+                            <h3>Itinerary: 4 days</h3>
+                            <p>
+                                🗸 <span class="highlight">Day 1: </span> City Landmarks and Entertainment
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 2: </span> Culture and History
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 3: </span> Nature and Science
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 4: </span> Shopping and Local Flavors
+                            </p>
+                            <h3>Accommodation Options</h3>
+                            <p>
+                                📍 <span class="highlight">Fairmont Royal York: </span> Elegant, historic ambiance
+                            </p>
+                            <p>
+                                📍 <span class="highlight">Chelsea Hotel, Toronto: </span> Family-friendly
+                            </p>
+                            <p>
+                                📍 <span class="highlight">The Rex Hotel Jazz & Blues Bar: </span> Affordable
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/form.html" class="button-1">Start Booking</a>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/trips.html" class="button-2">View More Trips</a>
+                        </div>
+                    
+                </section>
+
+                <section class="card-content">
+    
+                    <div class="image">
+                        <img src="images/niagara-falls-1-card-2x3.webp" alt="Adson Mettler profile photo" width="150" loading="lazy">
+                    </div>
+    
+                    <h2>Niagara Falls Route</h2>
+    
+                        <div class="text">
+                            <h3>
+                                The Canadian Rockies
+                            </h3>
+                            <h4>
+                                Where breathtaking natural wonders.
+                            </h4>
+                            <h3>Location: Niagara, Ontario</h3>
+                            <h3>Itinerary: 4 days</h3>
+                            <p>
+                                🗸 <span class="highlight">Day 1: </span> Iconic Falls and Local Exploration
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 2: </span> Adventure and Nature
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 3: </span> Thrills and Scenic Views
+                            </p>
+                            <h3>Accommodation Options</h3>
+                            <p>
+                                📍 <span class="highlight">Marriott Fallsview Hotel & Spa: </span> Spectacular falls views
+                            </p>
+                            <p>
+                                📍 <span class="highlight">DoubleTree Fallsview Resort & Spa by Hilton: </span> Comfortable
+                            </p>
+                            <p>
+                                📍 <span class="highlight">Country Inn & Suites by Radisson: </span> Affordable
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/form.html" class="button-1">Start Booking</a>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/trips.html" class="button-2">View More Trips</a>
+                        </div>
+                        
+                </section>
+                <section class="card-content">
+        
+                    <div class="image">
+                        <img src="images/old-quebec-2-card-2x3.webp" alt="Adson Mettler profile photo" width="150" loading="lazy">
+                    </div>
+    
+                    <h2>Old Quebec Route</h2>
+    
+                        <div class="text">
+                            <h3>
+                                Magical journey through Old Quebec
+                            </h3>
+                            <h4>
+                                Where history comes alive and every corner offers a new discovery!
+                            </h4>
+                            <h3>Location: Quebec City, Quebec</h3>
+                            <h3>Itinerary: 4 days</h3>
+                            <p>
+                                🗸 <span class="highlight">Day 1: </span> Arrival and Initial Exploration
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 2: </span> Historical and Cultural Sites
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 3: </span> Day Trip to Montreal
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 4: </span> Art and Leisure
+                            </p>
+                            <h3>Accommodation Options</h3>
+                            <p>
+                                📍 <span class="highlight">Fairmont Le Château Frontenac: </span> breathtaking views of the St. Lawrence River
+                            </p>
+                            <p>
+                                📍 <span class="highlight">Hotel Manoir Victoria: </span> Central location
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/form.html" class="button-1">Start Booking</a>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/trips.html" class="button-2">View More Trips</a>
+                        </div>
+                    
+                </section>
+                <section class="card-content">
+        
+                    <div class="image">
+                        <img src="images/bay-of-fundy-card-2x3.webp" alt="Adson Mettler profile photo" width="150" loading="lazy">
+                    </div>
+    
+                    <h2>Bay of Fundy Route</h2>
+    
+                        <div class="text">
+                            <h3>
+                                Natural wonder Nova Scotia
+                            </h3>
+                            <h4>
+                                Famous for having the highest tides in the world.
+                            </h4>
+                            <h3>Location: St. Andrews, New Brunswick</h3>
+                            <h3>Itinerary: 4 days</h3>
+                            <p>
+                                🗸 <span class="highlight">Day 1: </span> Arrival and Exploration
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 2: </span> Tidal Adventures and Coastal Scenery
+                            </p>
+                            <p>
+                                🗸 <span class="highlight">Day 3: </span> Whale Watching and Outdoor Activities
+                            </p>
+                            <h3>Accommodation Options</h3>
+                            <p>
+                                📍 <span class="highlight">The Algonquin Resort St. Andrews by-the-Sea: </span> Top-notch amenities
+                            </p>
+                            <p>
+                                📍 <span class="highlight">Digby Pines Golf Resort and Spa: </span> Located close to whale-watching tours
+                            </p>
+                            <p>
+                                📍 <span class="highlight">Fundy Complex Dockside Suites: </span> Affordable, cozy accommodations
+                            </p>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/form.html" class="button-1">Start Booking</a>
+                        </div>
+                        <div>
+                            <a href="https://adsonmettler.github.io/wdd131/project/trips.html" class="button-2">View More Trips</a>
+                        </div>
+                    
+                </section>
+            </div>
+        </section>
+
+        <!-- Why Canadian XP | Section -->
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p id="year">&copy; <span class="highlight">YYYY</span> Adson Mettler do Nascimento | Toronto, Canada</p>
+        <p id="lastModifiedDate" class="highlight">Last modified: </p>
+    </footer>
+</body>
+</html>
