@@ -1,5 +1,5 @@
 :root {
-	--primary-color: #00c6fb;
+	--primary-color: #00eeff;
   --secondary-color: #001720;
   --accent1-color: #e3a10f;
 	--accent2-color: #144351;
@@ -26,7 +26,7 @@ header, main {
 /*----------- HEADER --------------*/
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     display: grid;
     grid-gap: 1rem;
     padding-left: 20px;
@@ -50,6 +50,7 @@ header h1 {
 
 .image-logo {
     margin-top: 10px;
+    width: 80px;
 }
 
 
