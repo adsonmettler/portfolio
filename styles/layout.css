@@ -95,6 +95,25 @@ nav a {
     text-decoration: none;
 }
 
+.resume {
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.resume:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
+    transform: translateY(-4px);
+}
+
 
 /*----------- MAIN --------------*/
 
@@ -114,7 +133,7 @@ main {
     display: none;
 }
 
-.hero-content .hero-image1 {
+.hero-containter .hero-image1 {
     max-width: 100%;
 }
 
