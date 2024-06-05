@@ -22,15 +22,19 @@ body {
     }
 
 
+    /*----------- NAVIGATION --------------*/
+
+
     header {
         display: flex;
         align-items: center;
         justify-content: space-around;
         color: white;
         border: 1px solid rgba(99, 216, 255, 0.452);
-        box-shadow: 0 0 30px #333;
+        box-shadow: 0 0 30px #0f0f0f;
         background-color: var(--secondary-color);
         width: 100%;
+        padding: 0;
     }
 
     #menu {
@@ -41,12 +45,12 @@ body {
     .navigation {
         display: flex;
         align-items: center;
-        margin: 0 25% 0 25%;
     }
 
     nav a {
         position: relative;
         width: 100%;
+        font-size: 14px;
         margin: 0 25% 0 25%;
         transition: transform 0.3s ease-in-out; /* Smooth transition */
     }
@@ -65,9 +69,9 @@ body {
         color: var(--secondary-color);
         border-radius: 8px;
         padding: 10px;
-        right: -10px;
+        right: -50px;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .resume:hover {
@@ -83,6 +87,20 @@ body {
         position: relative;
         margin-left: -150px;
     }
+
+
+    /*----------- MAIN --------------*/
+
+
+    .hero-image1 {
+        display: none;
+    }
+
+    .hero-image2 {
+        display: block;
+    }
+
+    
 
 
 

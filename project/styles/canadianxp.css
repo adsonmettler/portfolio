@@ -68,7 +68,7 @@ header {
 
 #menu.open::before {
 	content: "☰";
-    color: #f59432;
+    color: var(--accent3-color);
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
