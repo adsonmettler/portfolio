@@ -130,7 +130,11 @@ main {
     height: auto;
 }
 
-.hero-image2 {
+.hero-image1 {
+    display: none;
+}
+
+.spaceman-hero {
     display: none;
 }
 
@@ -147,6 +151,30 @@ main {
     margin: -220px 10% 0 5%;
     padding: 10px;
     padding-right: 80px;
+    animation: fade 1s ease-in 0.1s forwards;
+    pointer-events: none;
+    opacity: 0;
+}
+
+
+
+.hero-container p span {
+    background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    animation: fade 1s ease-in 0.1s forwards;
+    pointer-events: none;
+    opacity: 0;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .hero-container p {

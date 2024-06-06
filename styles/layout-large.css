@@ -98,13 +98,62 @@ body {
     /*-------- HERO SECTION ----------*/
 
 
-    .hero-image1 {
+    .hero-image2 {
         display: none;
     }
 
-    .hero-image2 {
+    .hero-image1 {
         display: block;
         width: 100%;
+        -webkit-mask-image: linear-gradient(
+            rgb(0, 23, 32, 0.8),
+            rgb(0, 23, 32, 0.8) 80%,
+            rgb(0, 23, 32, 0)
+            );
+        mask-image: linear-gradient(
+            rgb(0, 23, 32, 0.8),
+            rgb(0, 23, 32, 0.8) 80%,
+            rgb(0, 23, 32, 0)
+            );
+    }
+
+    .spaceman-hero {
+        display: flex;
+        width: 50%;
+        position: relative;
+        margin: -650px 10% 0 60%;
+        animation: slideFade 1s ease-in-out 0.1s forwards, randomMove 6s ease-in-out 1.1s infinite; /* Added 'randomMove' animation */
+        pointer-events: none;
+        opacity: 0;
+    }
+    
+    @keyframes slideFade {
+        0% {
+            opacity: 0.5;
+            transform: translateY(20px); /* Starts 20px lower */
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0); /* Ends at the original position */
+        }
+    }
+    
+    @keyframes randomMove {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(-2px, 2px);
+        }
+        50% {
+            transform: translate(4px, -4px);
+        }
+        75% {
+            transform: translate(-2px, -2px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
     }
 
     .hero-container h2 {
@@ -113,7 +162,7 @@ body {
         font-weight: 900;
         font-size: 64px;
         width: 100%;
-        margin: -550px 10% 0 10%;
+        margin: -45% 10% 0 10%;
         padding: 15px;
     }
     
@@ -136,6 +185,7 @@ body {
 
     .scroller {
         display: contents;
+        max-width: 1920px;
     }
 
     .scroller-inner {
@@ -147,12 +197,27 @@ body {
 
     .scroller[data-animated="true"] {
         overflow: hidden;
-        -webkit-mask-image: linear-gradient(90deg, black, transparent);
-        mask-image: linear-gradient(black, transparent);
+        -webkit-mask-image: linear-gradient(
+            90deg, transparent, black 20%, black 80%, transparent
+        );
+
+
+        mask-image: linear-gradient(
+            90deg, transparent, black 20%, black 80%, transparent
+        );
     }
 
     .scroller[data-animated="true"] .scroller-inner {
+        width: max-content;
         flex-wrap: nowrap;
+        animation: scroll 20s linear infinite;
+    }
+
+
+    @keyframes scroll {
+        to {
+            transform: translate(100%);
+        }
     }
 
 
