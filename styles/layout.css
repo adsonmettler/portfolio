@@ -119,6 +119,7 @@ nav a {
 
 main {
     width: 100%;
+    color: var(--accent3-color);
 }
 
 /*----------- HERO SECTION --------------*/
@@ -136,6 +137,37 @@ main {
 .hero-containter .hero-image1 {
     max-width: 100%;
 }
+
+.hero-container h2 {
+    color: var(--accent3-color);
+    text-align: left;
+    font-weight: 900;
+    font-size: 44px;
+    width: 100%;
+    margin: -220px 10% 0 5%;
+    padding: 10px;
+    padding-right: 80px;
+}
+
+.hero-container p {
+    color: var(--accent1-color);
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    margin: -10px 0 40px 5%;
+    padding: 10px;
+    padding-right: 200px;
+    line-height: 20px;
+}
+
+
+/*-------- INTRO SECTION ----------*/
+
+.scroller {
+    display: none;
+}
+
 
 /*----------- CARDS SECTION --------------*/
 

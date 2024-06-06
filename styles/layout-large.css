@@ -130,6 +130,22 @@ body {
     }
 
 
+
+
+    /*-------- INTRO SECTION ----------*/
+
+    .scroller {
+        display: contents;
+    }
+
+    .scroller-inner {
+        display: flex;
+        flex-wrap: wrap;
+        padding-block: 1rem;
+        gap: 1rem;
+    }
+
+
     
 
 
