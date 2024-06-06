@@ -230,8 +230,42 @@ body {
         background-color: rgba(2, 46, 64, 0.5);
         border: solid 1px rgb(227, 161, 15, 0.5);
         border-radius: 18px;
-        padding: 25px;
+        padding: 25px 25px 45px 25px;
         margin: 0 0 0 55%;
+    }
+
+    .intro-container h2 {
+        font-size: 44px;
+    }
+
+    .intro-container .text {
+        font-size: 14px;
+        line-height: 25px;
+        padding: 20px 0 25px 0;
+    }
+
+    .intro-container p {
+        padding-top: 20px;
+    }
+
+    .button-1 {
+        position: relative;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 8px;
+        padding: 10px 30px 10px 30px;
+        font-weight: 600;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .button-1:hover {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        border: solid 1px var(--primary-color);
+        font-weight: 600;
+        box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
+        transform: translateY(-4px);
     }
 
 
