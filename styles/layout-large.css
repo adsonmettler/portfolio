@@ -184,8 +184,10 @@ body {
     /*-------- INTRO SECTION ----------*/
 
     .scroller {
-        display: contents;
-        max-width: 1920px;
+        display: block;
+        width: 55%;
+        margin: 0 0 -300px 0;
+        padding-top: 200px;
     }
 
     .scroller-inner {
@@ -210,14 +212,26 @@ body {
     .scroller[data-animated="true"] .scroller-inner {
         width: max-content;
         flex-wrap: nowrap;
-        animation: scroll 20s linear infinite;
+        animation: scroll 40s linear infinite;
     }
 
 
     @keyframes scroll {
         to {
-            transform: translate(100%);
+            transform: translate(calc(-50% - .5rem));
         }
+    }
+
+
+    .intro-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 33%;
+        background-color: rgba(2, 46, 64, 0.5);
+        border: solid 1px rgb(227, 161, 15, 0.5);
+        border-radius: 18px;
+        padding: 25px;
+        margin: 0 0 0 55%;
     }
 
 
