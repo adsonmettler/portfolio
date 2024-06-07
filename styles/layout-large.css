@@ -105,6 +105,7 @@ body {
     .hero-image1 {
         display: block;
         width: 100%;
+        margin: 0 0 0 0;
         -webkit-mask-image: linear-gradient(
             rgb(0, 23, 32, 0.8),
             rgb(0, 23, 32, 0.8) 80%,
@@ -163,7 +164,7 @@ body {
         font-size: 64px;
         width: 100%;
         margin: -45% 10% 0 10%;
-        padding: 15px;
+        padding: 15px 15px 0 15px;
     }
     
     .hero-container p {
@@ -185,9 +186,10 @@ body {
 
     .scroller {
         display: block;
-        width: 55%;
+        width: 45%;
         margin: 0 0 -300px 0;
         padding-top: 200px;
+        padding-bottom: 100px;
     }
 
     .scroller-inner {
@@ -226,16 +228,17 @@ body {
     .intro-container {
         display: flex;
         flex-wrap: wrap;
-        width: 33%;
-        background-color: rgba(2, 46, 64, 0.5);
+        width: 47%;
+        background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
         border: solid 1px rgb(227, 161, 15, 0.5);
         border-radius: 18px;
         padding: 25px 25px 45px 25px;
-        margin: 0 0 0 55%;
+        margin: -40% 0 0 45%;
     }
 
     .intro-container h2 {
         font-size: 44px;
+        margin-bottom: -20px;
     }
 
     .intro-container .text {
