@@ -22,6 +22,7 @@
     html, body {
         max-width: 100%;
         font-family: "Montserrat", sans-serif;
+        overflow-x: hidden;
     }
 
 
@@ -36,7 +37,7 @@
         border: 1px solid rgba(99, 216, 255, 0.452);
         box-shadow: 0 0 30px #0f0f0f;
         background-color: var(--secondary-color);
-        width: 100%;
+        max-width: 100%;
         padding: 0;
         overflow: hidden;
     }
@@ -234,7 +235,7 @@
     .intro-container {
         display: flex;
         flex-wrap: wrap;
-        width: 47%;
+        max-width: 47%;
         height: auto;
         background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
         border: solid 1px rgb(227, 161, 15, 0.5);
