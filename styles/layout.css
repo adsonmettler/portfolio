@@ -201,8 +201,29 @@ main {
 
 /*----------- CARDS SECTION --------------*/
 
+.card-container span {
+    background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 /*----------- FOOTER --------------*/
 
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent3-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.highlight {
+    font-weight: 600;
+}
 

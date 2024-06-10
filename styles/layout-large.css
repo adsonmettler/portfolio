@@ -253,7 +253,7 @@
     .intro-container {
         display: flex;
         flex-wrap: wrap;
-        width: 45%;
+        width: 47%;
         height: auto;
         background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
         border: solid 1px rgb(227, 161, 15, 0.5);
@@ -300,6 +300,8 @@
 
     /*-------- CARDS SECTION ----------*/
 
+
+
     .card-grid {
         display: flex;
         flex-wrap: wrap;
@@ -327,37 +329,68 @@
         max-width: calc(33.333% - 20px);
         flex-direction: column;
         display: flex;
-        background-color: #0a3b4b;
-        border-radius: 12px;
-        padding: 0;
-        color: var(--accent2-color);
-        border: solid 1px rgba(255, 255, 255, 0.4);
+        border-radius: 20px;
+        padding: 15px;
+        color: var(--accent3-color);
+        background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
+        border: solid 1px rgba(57, 215, 255, 0.4);
         margin-bottom: 40px;
         margin-top: 40px;
     }
 
     .text {
-        padding: 20px;
+        text-align: center;
     }
 
 
     .card-grid h2 {
-        padding-left: 20px;
-        padding-top: 10px;
+        text-align: center;
+        width: 100%;
+        margin: 15% 0 10% 0;
+        font-size: 26px;
+    }
+
+    .card-grid p {
+        width: 100%;
+        margin: 0 0 20% 0;
+    }
+
+    .card-grid h3 {
+        width: 100%;
+        margin: 10% 0 -15% 0;
     }
 
 
     .image img {
+        position: relative;
         margin: 0;
-        padding: 0;
         width: 100%;
         height: auto;
-        border-radius: 12px 12px 0 0;
+        border-radius: 20px;
+        border: solid 1px rgba(57, 215, 255, 0.4);
+        margin: 0;
+        top: 60px;
+    }
+
+    .video {
+        position: relative;
+        padding-bottom: 66.67%; /* 3:2 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        border-radius: 20px;
+        border: solid 1px rgba(57, 215, 255, 0.4);
+        top: 60px;
     }
 
 
-    .card-content a {
-        margin: 20px;
+    
+
+
+    /* ------- FOOTER -------- */
+
+    footer {
+        margin-top: 80px;
     }
 
 }
