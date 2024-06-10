@@ -180,7 +180,7 @@
         font-weight: 400;
         font-size: 20px;
         width: 100%;
-        margin: -20px 0 400px 10%;
+        margin: -20px 0 0 10%;
         padding: 15px;
         padding-right: 700px;
         line-height: 35px;
@@ -191,18 +191,22 @@
 
     /*-------- INTRO SECTION ----------*/
 
+
+    .scroller-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+        margin: 45% 0 0 0;
+    }
+
     .scroller {
         display: block;
-        width: 45%;
-        margin: 0 0 -300px 0;
-        padding-top: 200px;
-        padding-bottom: 100px;
     }
 
     .scroller-inner {
         display: flex;
         flex-wrap: wrap;
-        padding-block: 1rem;
+        padding-block: .1rem;
         gap: 1rem;
     }
 
@@ -231,17 +235,31 @@
         }
     }
 
+    /* FADE-IN and FADE-OUT Scrool Animation */
+
+    /* main > section {
+        scale: .8; opacity: 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range: entry;
+    }
+
+    @keyframes fade-in {
+        to {scale: 1; opacity: 1;}
+    } */
+
+    /* FADE-IN and FADE-OUT Scrool Animation */
 
     .intro-container {
         display: flex;
         flex-wrap: wrap;
-        max-width: 47%;
+        width: 45%;
         height: auto;
         background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
         border: solid 1px rgb(227, 161, 15, 0.5);
         border-radius: 18px;
         padding: 25px 25px 45px 25px;
-        margin: -40% 0 0 45%;
+        margin: -25% 0 0 45%;
     }
 
     .intro-container h2 {
@@ -280,8 +298,66 @@
     }
 
 
+    /*-------- CARDS SECTION ----------*/
+
+    .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: 0 5% 0 5%;
+        padding: 40px;
+        gap: 20px;
+    }
+
+    .title {
+        position: relative;
+        color: var(--accent3-color);
+        text-align: center;
+        font-size: 44px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        max-width: 100%;
+        margin: 10% 25% 0 25%;
+        }
     
 
+    .card-content {
+        flex: 1 1 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+        flex-direction: column;
+        display: flex;
+        background-color: #0a3b4b;
+        border-radius: 12px;
+        padding: 0;
+        color: var(--accent2-color);
+        border: solid 1px rgba(255, 255, 255, 0.4);
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
 
+    .text {
+        padding: 20px;
+    }
+
+
+    .card-grid h2 {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+
+    .image img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+    }
+
+
+    .card-content a {
+        margin: 20px;
+    }
 
 }
