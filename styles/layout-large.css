@@ -348,7 +348,8 @@
         text-align: center;
         width: 100%;
         margin: 15% 0 10% 0;
-        font-size: 26px;
+        font-size: 44px;
+        font-weight: 900;
     }
 
     .card-grid p {
