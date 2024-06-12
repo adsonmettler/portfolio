@@ -59,3 +59,31 @@ function addAnimation() {
         });
     });
 }
+
+
+// TIMELINE TABS SCREENS function
+
+function openTab(event, tabId) {
+    // Hide all tab content
+    var tabPanes = document.getElementsByClassName('tab-pane');
+    for (var i = 0; i < tabPanes.length; i++) {
+        tabPanes[i].style.display = 'none';
+        tabPanes[i].classList.remove('active');
+    }
+
+    // Remove 'active' class from all tab buttons
+    var tabButtons = document.getElementsByClassName('tab-btn');
+    for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove('active');
+    }
+
+    // Show the clicked tab's content and set the clicked button to active
+    document.getElementById(tabId).style.display = 'block';
+    document.getElementById(tabId).classList.add('active');
+    event.currentTarget.classList.add('active');
+}
+
+// Initially display the first tab's content and set the first tab button to active
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.tab-btn').click();
+});

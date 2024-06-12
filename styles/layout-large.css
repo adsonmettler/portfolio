@@ -303,6 +303,46 @@
     /*-------- CARDS SECTION ----------*/
 
 
+    .logo-3d {
+        display: flex;
+        width: 20%;
+        height: auto;
+        margin: -15% 0 0 8%;
+        animation: slideFade 1s ease-in-out 0.1s forwards, randomMove-1 12s ease-in-out 1.1s infinite; /* Added 'randomMove' animation */
+        pointer-events: none;
+        opacity: 0;
+    }
+    
+    @keyframes slideFade {
+        0% {
+            opacity: 0.5;
+            transform: translateY(20px); /* Starts 20px lower */
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0); /* Ends at the original position */
+        }
+    }
+    
+    @keyframes randomMove-1 {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(-4px, 4px);
+        }
+        50% {
+            transform: translate(0, -65px);
+        }
+        75% {
+            transform: translate(-4px, -4px);
+        }
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+
+
 
     .card-grid {
         display: flex;
@@ -413,8 +453,75 @@
     }
 
     .video:hover {
-        box-shadow: 0 20px 40px rgba(57, 215, 255, 0.3);
+        box-shadow: 0 20px 40px rgb(57, 215, 255, 0.3);
         transform: scale(1.03); /* Zoom in effect */
+    }
+
+
+    /* --------------- TIMELINE SECTION ----------------- */
+
+
+    .timeline-container img {
+        display: flex;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    .timeline-grid {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: -45% 0 25% 10%;
+    }
+    
+    .tabs {
+        width: 25%;
+        background-color: rgb(57, 215, 255, 0);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+        margin: 0 0 0 10%;
+    }
+    
+    .tab-btn {
+        background-color: rgb(57, 215, 255, 0);
+        border: 1px solid rgb(57, 215, 255, 0.2);
+        padding: 20px;
+        text-align: left;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        color: #00eeff;
+        border-radius: 12px;
+        font-size: 20px;
+        border-left: 3px solid rgb(57, 215, 255, 1);
+    }
+    
+    .tab-btn:hover {
+        background-color: rgb(57, 215, 255, 0.2);
+    }
+    
+    .tab-btn.active {
+        background-color: rgb(57, 215, 255, 0.1);
+    }
+    
+    .tab-content {
+        flex: 1;
+        padding: 80px;
+        border-left: 1px solid rgb(57, 215, 255, 1);
+        margin: 0 15% 0 5%;
+        background-color: rgb(227, 161, 15, 0.05);
+        border-radius: 8px;
+    }
+    
+    .tab-pane {
+        display: none;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    
+    .tab-pane.active {
+        display: block;
     }
 
 
