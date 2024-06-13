@@ -272,6 +272,7 @@
         font-size: 14px;
         line-height: 25px;
         padding: 20px 0 25px 0;
+        margin: 5% 0 5% 0;
     }
 
     .intro-container p {
@@ -281,12 +282,13 @@
 
     .button-1 {
         position: relative;
+        width: 100%;
         background-color: var(--primary-color);
         color: var(--secondary-color);
         border-radius: 8px;
         padding: 10px 30px 10px 30px;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 14px;
         text-decoration: none;
     }
 
