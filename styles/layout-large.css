@@ -196,7 +196,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 45%;
-        margin: 45% 0 0 0;
+        margin: 55% 0 0 0;
     }
 
     .scroller {
@@ -252,14 +252,14 @@
 
     .intro-container {
         display: flex;
-        flex-wrap: wrap;
-        width: 47%;
+        justify-content: flex-end;
+        max-width: 600px;
         height: auto;
         background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
         border: solid 1px rgb(227, 161, 15, 0.5);
         border-radius: 18px;
-        padding: 25px 25px 45px 25px;
-        margin: -25% 0 0 45%;
+        padding: 45px 45px 45px 45px;
+        margin: -30% 0 0 45%;
     }
 
     .intro-container h2 {
@@ -346,11 +346,11 @@
 
     .card-grid {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         max-width: 100%;
-        margin: 0 5% 0 5%;
-        padding: 40px;
+        margin: 0 30% 0 5%;
         gap: 20px;
     }
 
@@ -360,27 +360,25 @@
         text-align: center;
         font-size: 44px;
         font-weight: 900;
-        margin-bottom: 10px;
         max-width: 100%;
         margin: 10% 25% 0 25%;
         }
     
 
     .card-content {
-        max-width: 50%;
-        flex-direction: column;
-        display: flex;
+        max-width: 550px;
         border-radius: 20px;
         padding: 50px;
         color: var(--accent3-color);
         background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
         border: solid 1px rgba(57, 215, 255, 0.4);
-        margin-bottom: 40px;
         margin-top: 20px;
+        position: relative;
     }
 
     .text {
         text-align: center;
+        padding: 25px;
     }
 
 
@@ -394,7 +392,7 @@
 
     .card-grid p {
         width: 100%;
-        margin: 0 0 8% 0;
+        margin: 0 0 5% 0;
         line-height: 25px;
         color: rgba(57, 215, 255, 1);
         font-size: 16px;
@@ -402,6 +400,7 @@
 
     .line-container {
         text-align: center;
+        margin: 0 0 20% 0;
     }
 
     .line-container::before {
@@ -412,27 +411,27 @@
         margin: 0 0 0 0;
     }
 
-    .card-grid h3 {
+    .card-grid .button-1 {
         width: 100%;
-        margin: 10% 0 -10% 0;
-        font-size: 20px;
+        margin: 0 0 0 0;
+        font-size: 14px;
     }
 
 
     .image img {
         position: relative;
-        margin: -50% 0 0 105%;
+        margin: -70% 0 5% 100%;
         width: 100%;
         height: auto;
         border-radius: 20px;
         border: solid 1px rgba(57, 215, 255, 0.4);
         box-shadow: 0 20px 40px rgba(57, 215, 255, 0.2);
-        transition: transform 0.3s ease-in-out; /* Smooth transition */
+        transition: transform 0.2s ease-in-out; /* Smooth transition */
     }
 
     .image img:hover {
         box-shadow: 0 20px 40px rgba(57, 215, 255, 0.3);
-        transform: scale(1.03); /* Zoom in effect */
+        transform: translateX(8px);
     }
 
 
@@ -444,14 +443,14 @@
         width: 100%;
         border-radius: 20px;
         border: solid 1px rgba(57, 215, 255, 0.4);
-        margin: -50% 0 0 105%;
+        margin: -70% 0 5% 100%;
         box-shadow: 0 20px 40px rgba(57, 215, 255, 0.2);
-        transition: transform 0.3s ease-in-out; /* Smooth transition */
+        transition: transform 0.2s ease-in-out; /* Smooth transition */
     }
 
     .video:hover {
         box-shadow: 0 20px 40px rgb(57, 215, 255, 0.3);
-        transform: scale(1.03); /* Zoom in effect */
+        transform: translateX(8px);
     }
 
 
