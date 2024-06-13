@@ -207,6 +207,15 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
+/*----------- TIMELINE EXPERIENCE SECTION --------------*/
+
+.timeline-container span {
+    background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
 
 /*----------- FOOTER --------------*/
 
