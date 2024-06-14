@@ -201,7 +201,7 @@ main {
 
 /*----------- CARDS SECTION --------------*/
 
-.card-container span {
+.title span {
     background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -209,12 +209,131 @@ main {
 
 /*----------- TIMELINE EXPERIENCE SECTION --------------*/
 
-.timeline-container span {
-    background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
+
+
+
+
+/*----------- FORM STYLING --------------*/
+
+
+
+.wf1 fieldset {
+    background-color: var(--secondary-color);
+    margin: 2rem 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding: .5rem 2%;
 }
+
+
+
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+.wf1 input[type="date"],
+.wf1 select
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 200px;
+    appearance: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="number"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 300px;
+    appearance: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.wf1 textarea
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 300px;
+    appearance: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]{
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"]{
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 12px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.wf1 input[type="submit"]:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
+    transform: translateY(-4px);
+}
+
+.wf1 label input:required {
+    border-left: solid 6px #e3a10f;
+}
+
+.wf1 label input:required:valid {
+    border-left: solid 6px #00eeff;
+}
+
+.wf1 select:required {
+    border-left: solid 6px #e3a10f;
+}
+
+.wf1 select:required:valid {
+    border-left: solid 6px #00eeff;
+}
+
+
 
 
 /*----------- FOOTER --------------*/
