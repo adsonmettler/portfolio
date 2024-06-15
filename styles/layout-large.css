@@ -74,9 +74,10 @@
         color: var(--secondary-color);
         border-radius: 8px;
         padding: 10px;
-        right: -50px;
+        right: -75px;
+        margin: 0 0 0 0;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .resume:hover {
