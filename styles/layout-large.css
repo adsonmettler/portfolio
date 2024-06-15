@@ -337,7 +337,7 @@
             transform: translate(0, -65px);
         }
         75% {
-            transform: translate(-4px, -4px);
+            transform: translate(-4px, 4px);
         }
         100% {
             transform: translate(0, 0);
@@ -543,8 +543,15 @@
     /*----------- FORM STYLING --------------*/
 
     form {
-        width: 50%;
-        margin: -10% 0 0 25%;
+        width: 52%;
+        margin: -5% 0 0 25%;
+    }
+
+    form h2 {
+        font-size: 44px;
+        font-weight: 900;
+        text-align: center;
+        margin: 0 0 0 0;
     }
 
     
@@ -569,7 +576,7 @@
 {
     background-color: #eee;
     display: block;
-    border: solid 1px #999;
+    border: solid 1px #e3a10f;
     border-radius: 6px;
     padding: .75rem;
     color: #001720;
@@ -587,7 +594,7 @@
 {
     background-color: #eee;
     display: block;
-    border: solid 1px #999;
+    border: solid 1px #e3a10f;
     border-radius: 6px;
     padding: .75rem;
     color: #001720;
@@ -620,11 +627,10 @@
 .wf1 input[type="submit"]
 {
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 1rem;
-    width: 70%;
-    max-width: 400px;
-    margin: -1rem 15% 2rem 15%;
+    width: 300px;
+    margin: 5% 0 2rem 6%;
     
 }
 

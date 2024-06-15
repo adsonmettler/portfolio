@@ -87,3 +87,65 @@ function openTab(event, tabId) {
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.tab-btn').click();
 });
+
+
+// FORM select function
+
+// Service array with corrected id field quotes
+const services = [
+    {
+      id: "wd-001",
+      name: "Web Development",
+      avgRating: 4.5
+    },
+    {
+      id: "gd-001",
+      name: "Graphic Design",
+      avgRating: 4.7
+    },
+    {
+      id: "mk-001",
+      name: "Marketing Campaign",
+      avgRating: 3.5
+    },
+    {
+      id: "ve-001",
+      name: "Video Editing",
+      avgRating: 3.9
+    },
+  ];
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    // Populate the trip route dropdown
+    const serviceSelect = document.querySelector('select[name="service"]');
+    services.forEach(service => {
+        const option = document.createElement('option');
+        option.value = service.id;
+        option.textContent = service.name;
+        serviceSelect.appendChild(option);
+    });
+
+    // Handle form submission
+    const form = document.querySelector('form.wf1');
+    form.addEventListener('submit', function(event) {
+        // Collect form data
+        const formData = {
+            name: form.elements['fname'].value,
+            email: form.elements['email'].value,
+            phone: form.elements['phone'].value,
+            route: form.elements['route'].value,
+            people: form.elements['people'].value,
+            date: form.elements['completeDate'].value,
+            planned: Array.from(form.elements['planned']).filter(checkbox => checkbox.checked).map(checkbox => checkbox.value),
+            comment: form.elements['comment'].value
+        };
+
+        // Store form data in localStorage
+        let requestCount = localStorage.getItem('requestCount') || 0;
+        requestCount = parseInt(requestCount) + 1;
+        localStorage.setItem('requestCount', requestCount);
+        localStorage.setItem(`request_${requestCount}`, JSON.stringify(formData));
+
+        // Allow form to submit and navigate to thanks.html
+    });
+});

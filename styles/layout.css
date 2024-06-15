@@ -101,10 +101,12 @@ nav a {
     position: relative;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
     font-weight: 600;
     font-size: 12px;
+    margin: 0 0 10px 0;
 }
 
 .resume:hover {
@@ -113,7 +115,6 @@ nav a {
     border: solid 1px var(--primary-color);
     font-weight: 600;
     box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
-    transform: translateY(-4px);
 }
 
 
@@ -194,14 +195,107 @@ main {
 
 /*-------- INTRO SECTION ----------*/
 
+
+
+.scroller-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 15% 0 15% 0;
+}
+
 .scroller {
-    display: none;
+    display: block;
+}
+
+.scroller-inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: .1rem;
+    gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+        90deg, transparent, black 20%, black 80%, transparent
+    );
+
+
+    mask-image: linear-gradient(
+        90deg, transparent, black 20%, black 80%, transparent
+    );
+}
+
+.scroller[data-animated="true"] .scroller-inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 40s linear infinite;
+}
+
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - .5rem));
+    }
+}
+
+
+.intro-container {
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 315px;
+    height: auto;
+    background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
+    border: solid 1px rgb(227, 161, 15, 0.5);
+    border-radius: 18px;
+    padding: 25px 25px 25px 25px;
+    margin: 0 0 10% 10%;
+}
+
+.intro-container h2 {
+    font-size: 34px;
+    margin-bottom: -20px;
+    font-weight: 900;
+}
+
+.intro-container .text {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 20px 0 25px 0;
+    margin: 5% 0 5% 0;
+}
+
+.intro-container p {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.button-1 {
+    position: relative;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 10px 30px 10px 30px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.button-1:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: solid 1px var(--primary-color);
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
+    transform: translateY(-4px);
 }
 
 
 /*----------- CARDS SECTION --------------*/
 
-.title span {
+.title span, form span {
     background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -219,13 +313,18 @@ main {
 
 .wf1 fieldset {
     background-color: var(--secondary-color);
-    margin: 2rem 10px 40px 0;
+    margin: 2rem 10px 40px 10px;
     border: 1px solid var(--primary-color);
     border-radius: 12px;
-    padding: 2rem 8%;
+    padding: 2rem 5%;
 }
 
-
+form h2 {
+    font-size: 44px;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
 
 
 .wf1 label {
@@ -238,7 +337,6 @@ main {
 }
 
 
-.wf1 input[type="date"],
 .wf1 select
 {
     background-color: #eee;
@@ -257,9 +355,7 @@ main {
 
 
 .wf1 input[type="text"],
-.wf1 input[type="tel"],
-.wf1 input[type="email"],
-.wf1 input[type="number"]
+.wf1 input[type="email"]
 {
     background-color: #eee;
     display: block;
@@ -299,22 +395,24 @@ main {
 
 .wf1 input[type="submit"]{
     position: relative;
+    border: none;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    border-radius: 20px;
-    padding: 10px;
+    box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
+    border-radius: 12px;
+    padding: 15px;
     font-weight: 600;
     font-size: 16px;
+    margin: 10px 0 0 0;
     transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
 .wf1 input[type="submit"]:hover {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border: solid 1px var(--primary-color);
-    font-weight: 600;
-    box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
-    transform: translateY(-4px);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 20px rgba(57, 215, 255, 0.4);
+    transform: translateX(4px);
+    
 }
 
 .wf1 label input:required {
