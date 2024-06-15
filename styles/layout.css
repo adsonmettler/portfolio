@@ -301,6 +301,157 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
+.logo-3d {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin: -10% 0 0 25%;
+    animation: slideFade 1s ease-in-out 0.1s forwards, randomMove-1 12s ease-in-out 1.1s infinite; /* Added 'randomMove' animation */
+    pointer-events: none;
+    opacity: 0;
+}
+
+@keyframes slideFade {
+    0% {
+        opacity: 0.5;
+        transform: translateY(20px); /* Starts 20px lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Ends at the original position */
+    }
+}
+
+@keyframes randomMove-1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-4px, 4px);
+    }
+    50% {
+        transform: translate(0, -65px);
+    }
+    75% {
+        transform: translate(-4px, 4px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 5% 0 5%;
+    gap: 20px;
+}
+
+.title {
+    position: relative;
+    color: var(--accent3-color);
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    max-width: 100%;
+    margin: 10% 25% 0 25%;
+    }
+
+
+.card-content {
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--accent3-color);
+    background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
+    border: solid 1px rgba(57, 215, 255, 0.4);
+    margin-top: 20px;
+    position: relative;
+}
+
+.text {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.card-grid h2 {
+    text-align: center;
+    width: 100%;
+    margin: 5% 0 5% 0;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.card-grid p {
+    width: 100%;
+    margin: 0 0 5% 0;
+    line-height: 25px;
+    color: rgba(57, 215, 255, 1);
+    font-size: 16px;
+}
+
+.line-container {
+    text-align: center;
+    margin: 0 0 20% 0;
+}
+
+.line-container::before {
+    content: "";
+    display: inline-block;
+    width: 50%; /* Adjust the width to make it shorter or longer */
+    border-top: 1px solid rgba(57, 215, 255, 1); /* Adjust the thickness and color */
+    margin: 0 0 0 0;
+}
+
+.card-grid .button-1 {
+    width: 100%;
+    margin: 0 0 0 0;
+    font-size: 14px;
+}
+
+
+.image img {
+    position: relative;
+    margin: 10% 0 0 0;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: solid 1px rgba(57, 215, 255, 0.4);
+    box-shadow: 0 20px 40px rgba(57, 215, 255, 0.2);
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.image img:hover {
+    box-shadow: 0 20px 40px rgba(57, 215, 255, 0.3);
+    transform: translateY(8px);
+}
+
+
+.video {
+    position: relative;
+    padding-bottom: 66.67%; /* 3:2 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+    border: solid 1px rgba(57, 215, 255, 0.4);
+    margin: 10% 0 0 0;
+    box-shadow: 0 20px 40px rgba(57, 215, 255, 0.2);
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.video:hover {
+    box-shadow: 0 20px 40px rgb(57, 215, 255, 0.3);
+    transform: translateY(8px);
+}
+
+
 /*----------- TIMELINE EXPERIENCE SECTION --------------*/
 
 
