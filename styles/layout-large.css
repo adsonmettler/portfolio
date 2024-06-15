@@ -180,7 +180,7 @@
         font-weight: 400;
         font-size: 20px;
         width: 100%;
-        margin: -20px 0 0 10%;
+        margin: -15px 0 0 10%;
         padding: 15px;
         padding-right: 700px;
         line-height: 35px;
@@ -499,7 +499,6 @@
         color: #00eeff;
         border-radius: 12px;
         font-size: 20px;
-        border-left: 3px solid rgb(57, 215, 255, 1);
     }
     
     .tab-btn:hover {
@@ -508,6 +507,7 @@
     
     .tab-btn.active {
         background-color: rgb(57, 215, 255, 0.1);
+        border: 1px solid rgb(57, 215, 255, 0.6);
     }
     
     .tab-content {
@@ -516,7 +516,7 @@
         border-left: 1px solid rgb(57, 215, 255, 1);
         margin: 0 15% 0 5%;
         background-color: rgb(227, 161, 15, 0.05);
-        border-radius: 8px;
+        border-radius: 0 25px 25px 0;
     }
     
     .tab-pane {
@@ -572,7 +572,8 @@
     border: solid 1px #999;
     border-radius: 6px;
     padding: .75rem;
-    color: #555;
+    color: #001720;
+    font-weight: 600;
     width: 100%;
     max-width: 200px;
     appearance: none;
@@ -581,14 +582,16 @@
 }
 
 
-.wf1 input[type="text"]
+.wf1 input[type="text"],
+.wf1 input[type="email"]
 {
     background-color: #eee;
     display: block;
     border: solid 1px #999;
     border-radius: 6px;
     padding: .75rem;
-    color: #555;
+    color: #001720;
+    font-weight: 600;
     width: 100%;
     max-width: 400px;
     appearance: none;
@@ -604,7 +607,8 @@
     border: solid 1px #999;
     border-radius: 6px;
     padding: 1.75rem;
-    color: #555;
+    color: #001720;
+    font-weight: 600;
     width: 100%;
     max-width: 400px;
     appearance: none;
@@ -616,8 +620,8 @@
 .wf1 input[type="submit"]
 {
     border: none;
-    border-radius: 6px;
-    padding: .8rem;
+    border-radius: 8px;
+    padding: 1rem;
     width: 70%;
     max-width: 400px;
     margin: -1rem 15% 2rem 15%;

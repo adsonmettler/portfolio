@@ -219,10 +219,10 @@ main {
 
 .wf1 fieldset {
     background-color: var(--secondary-color);
-    margin: 2rem 10px;
+    margin: 2rem 10px 40px 0;
     border: 1px solid var(--primary-color);
     border-radius: 12px;
-    padding: .5rem 2%;
+    padding: 2rem 8%;
 }
 
 
@@ -301,7 +301,7 @@ main {
     position: relative;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 10px;
     font-weight: 600;
     font-size: 16px;
