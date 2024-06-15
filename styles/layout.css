@@ -466,15 +466,15 @@ main {
 
 .timeline-container img {
     display: flex;
-    width: 100%;
-    margin: 0 0 0 0;
+    width: 130%;
+    margin: 70% 0 0 -10%;
 }
 
 .timeline-grid {
     display: flex;
     width: 100%;
     height: auto;
-    margin: -50% 0 25% 0;
+    margin: -120% 0 25% 0;
 }
 
 .tabs {
@@ -505,11 +505,12 @@ main {
 
 .tab-btn.active {
     background-color: rgb(57, 215, 255, 0.1);
-    border: 1px solid rgb(57, 215, 255, 0.6);
+    border: 1px solid rgb(57, 215, 255, 1);
 }
 
 .tab-content {
     flex: 1;
+    margin: 0 10px 0 0;
     padding: 20px;
     border-left: 1px solid rgb(57, 215, 255, 1);
     background-color: rgb(227, 161, 15, 0.05);
