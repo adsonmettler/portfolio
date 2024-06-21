@@ -125,9 +125,9 @@
     }
 
     .spaceman-hero {
-        width: 45%;
-        top: 30%;
-        left: 55%;
+        width: 40%;
+        top: 25%;
+        left: 60%;
     }
     
     @keyframes slideFade {
@@ -162,7 +162,7 @@
     .hero-container .flexbox-content {
         position: absolute;
         top: 0;
-        left: 45%;
+        left: 44%;
         transform: translate(-60%, 20%);
         text-align: left;
         z-index: 2;
@@ -200,7 +200,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 45%;
-        margin: 25% 0 0 0;
+        margin: 20% 0 0 0;
     }
 
     .scroller {
