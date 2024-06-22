@@ -219,7 +219,7 @@ main {
     z-index: 2;
 }
 
-.hero-container h2 {
+.hero-container h1 {
     color: var(--accent3-color);
     text-align: left;
     font-weight: 900;
