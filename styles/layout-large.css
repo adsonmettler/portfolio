@@ -38,7 +38,7 @@
         box-shadow: 0 0 30px #0f0f0f;
         background-color: var(--secondary-color);
         max-width: 100%;
-        padding: 0;
+        padding: 0 25px 0 25px;
         overflow: hidden;
     }
 
@@ -55,8 +55,7 @@
     nav a {
         position: relative;
         width: 100%;
-        font-size: 14px;
-        margin: 0 25% 0 65%;
+        font-size: .8rem;
         transition: transform 0.3s ease-in-out; /* Smooth transition */
     }
 
@@ -74,10 +73,10 @@
         color: var(--secondary-color);
         border-radius: 8px;
         padding: 10px;
-        right: -75px;
+        
         margin: 0 0 0 0;
         font-weight: 600;
-        font-size: 14px;
+        font-size: .8rem;
     }
 
     .resume:hover {
@@ -89,10 +88,7 @@
         transform: translateY(-4px);
     }
 
-    .image-logo {
-        position: relative;
-        margin-left: -150px;
-    }
+    
 
 
     /*----------- MAIN --------------*/
@@ -163,7 +159,7 @@
         position: absolute;
         top: 0;
         left: 44%;
-        transform: translate(-60%, 20%);
+        transform: translate(-50%, 20%);
         text-align: left;
         z-index: 2;
     }
@@ -172,7 +168,7 @@
         color: var(--accent3-color);
         text-align: left;
         font-weight: 900;
-        font-size: 4rem;
+        font-size: 4.6rem;
         width: 100%;
         height: auto;
         margin: 150px 0 0 0;
@@ -183,7 +179,7 @@
         color: var(--accent1-color);
         text-align: left;
         font-weight: 400;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         width: 100%;
         margin: 0 200px 0 0;
         padding: 5px;
@@ -196,7 +192,7 @@
     /*-------- INTRO SECTION ----------*/
 
 
-    .scroller-container {
+    /* .scroller-container {
         display: flex;
         flex-wrap: wrap;
         width: 45%;
@@ -205,14 +201,9 @@
 
     .scroller {
         display: block;
-    }
+    } */
 
-    .scroller-inner {
-        display: flex;
-        flex-wrap: wrap;
-        padding-block: .1rem;
-        gap: 1rem;
-    }
+    
 
     .scroller[data-animated="true"] {
         overflow: hidden;
@@ -254,32 +245,35 @@
 
     /* FADE-IN and FADE-OUT Scrool Animation */
 
+    .scroller {
+        margin: 140px 0 0 0;
+        width: 100%;
+    }
+
+
     .intro-container {
         display: flex;
         justify-content: flex-end;
-        max-width: 600px;
+        max-width: 100%;
         height: auto;
-        background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
-        border: solid 1px rgb(227, 161, 15, 0.5);
         border-radius: 18px;
-        padding: 45px 45px 45px 45px;
-        margin: -30% 0 0 45%;
+        margin: 0 0 0 0;
     }
 
-    .intro-container h2 {
-        font-size: 44px;
+    .intro-content h2 {
+        font-size: 2rem;
         margin-bottom: -20px;
         font-weight: 900;
     }
 
-    .intro-container .text {
-        font-size: 14px;
+    .intro-content .text {
+        font-size: .8rem;
         line-height: 25px;
         padding: 20px 0 25px 0;
         margin: 5% 0 5% 0;
     }
 
-    .intro-container p {
+    .intro-content p {
         padding-top: 20px;
         text-align: left;
     }
@@ -292,7 +286,7 @@
         border-radius: 8px;
         padding: 10px 30px 10px 30px;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 1rem;
         text-decoration: none;
     }
 
@@ -364,10 +358,10 @@
         position: relative;
         color: var(--accent3-color);
         text-align: center;
-        font-size: 44px;
+        font-size: 3rem;
         font-weight: 900;
         max-width: 100%;
-        margin: 10% 25% 0 25%;
+        margin: 0 25% 0 25%;
         }
     
 
@@ -392,7 +386,7 @@
         text-align: center;
         width: 100%;
         margin: 5% 0 10% 0;
-        font-size: 34px;
+        font-size: 2.2rem;
         font-weight: 900;
     }
 
@@ -401,7 +395,7 @@
         margin: 0 0 5% 0;
         line-height: 25px;
         color: rgba(57, 215, 255, 1);
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .line-container {
@@ -420,7 +414,7 @@
     .card-grid .button-1 {
         width: 100%;
         margin: 0 0 0 0;
-        font-size: 14px;
+        font-size: 1rem;
     }
 
 
@@ -470,16 +464,19 @@
 
     /* --------------- TIMELINE SECTION ----------------- */
 
+    .timeline-container .title {
+        margin: 15% 0 0 0;
+    }
+
     .timeline-container .subtitle {
         text-align: center;
         padding-top: 15px;
-        font-size: 20px;
+        font-size: 1.4rem;
         margin: 0 0 0 0;
     }
 
 
     .timeline-container img {
-        display: flex;
         width: 100%;
         margin: 0 0 0 0;
     }
@@ -510,7 +507,7 @@
         transition: background-color 0.3s;
         color: #00eeff;
         border-radius: 12px;
-        font-size: 20px;
+        font-size: 1.4rem;
     }
     
     .tab-btn:hover {
@@ -542,12 +539,12 @@
     }
 
     .tab-pane h2 {
-        font-size: 34px;
+        font-size: 2rem;
         margin: 0 0 10% 0;
     }
 
     .tab-pane p {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 25px;
     }
 
@@ -556,11 +553,11 @@
 
     form {
         width: 52%;
-        margin: -5% 0 0 25%;
+        margin: 5% 0 0 25%;
     }
 
     form h2 {
-        font-size: 44px;
+        font-size: 3rem;
         font-weight: 900;
         text-align: center;
         margin: 0 0 0 0;
