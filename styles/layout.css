@@ -616,7 +616,7 @@ main {
 }
 
 form h2 {
-    font-size: 44px;
+    font-size: 4rem;
     font-weight: 900;
     text-align: center;
     margin: 20px 0 0 0;
@@ -627,9 +627,9 @@ form h2 {
     display: block;
     padding-top: 1rem;
     color: var(--primary-color);
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 1.5rem;
 }
 
 
@@ -698,7 +698,7 @@ form h2 {
     border-radius: 12px;
     padding: 15px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 10px 0 0 0;
     transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
