@@ -268,7 +268,7 @@
 
     .intro-content .text {
         font-size: .8rem;
-        line-height: 25px;
+        line-height: 1.5rem;
         padding: 20px 0 25px 0;
         margin: 5% 0 5% 0;
     }
@@ -393,7 +393,7 @@
     .card-grid p {
         width: 100%;
         margin: 0 0 5% 0;
-        line-height: 25px;
+        line-height: 1.5rem;
         color: rgba(57, 215, 255, 1);
         font-size: 1rem;
     }
@@ -545,7 +545,7 @@
 
     .tab-pane p {
         font-size: 1rem;
-        line-height: 25px;
+        line-height: 1.5rem;
     }
 
 
