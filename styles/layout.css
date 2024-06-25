@@ -417,7 +417,7 @@ main {
     position: relative;
     color: var(--accent3-color);
     text-align: center;
-    font-size: 44px;
+    font-size: 3rem;
     font-weight: 900;
     max-width: 100%;
     margin: 10% 15% 0 15%;
@@ -445,7 +445,7 @@ main {
     text-align: center;
     width: 100%;
     margin: 5% 0 5% 0;
-    font-size: 34px;
+    font-size: 2.2rem;
     font-weight: 900;
 }
 
@@ -525,7 +525,7 @@ main {
 .timeline-container .subtitle {
     text-align: center;
     padding-top: 15px;
-    font-size: 20px;
+    font-size: 1.4rem;
     margin: 0 0 0 0;
 }
 
@@ -562,7 +562,7 @@ main {
     transition: background-color 0.3s;
     color: #00eeff;
     border-radius: 12px;
-    font-size: 14px;
+    font-size: .8rem;
 }
 
 .tab-btn:hover {
@@ -593,13 +593,20 @@ main {
 }
 
 .tab-pane h2 {
-    font-size: 24px;
+    font-size: 1.4rem;
     margin: 0 0 15% 0;
 }
 
 .tab-pane p {
-    font-size: 14px;
-    line-height: 25px;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.tab-pane li {
+    font-size: .8rem;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
 }
 
 
@@ -616,7 +623,7 @@ main {
 }
 
 form h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     text-align: center;
     margin: 20px 0 0 0;
