@@ -594,7 +594,7 @@ main {
 
 .tab-pane h2 {
     font-size: 1.4rem;
-    margin: 0 0 15% 0;
+    margin: 0 0 20px 0;
 }
 
 .tab-pane p {
@@ -607,6 +607,10 @@ main {
     font-size: .8rem;
     line-height: 1.5rem;
     padding-bottom: 10px;
+}
+
+.tab-pane span {
+    font-weight: 700;
 }
 
 
