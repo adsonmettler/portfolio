@@ -36,7 +36,6 @@
         color: white;
         border: 1px solid rgba(99, 216, 255, 0.452);
         box-shadow: 0 0 30px #0f0f0f;
-        background-color: var(--secondary-color);
         max-width: 100%;
         padding: 0 25px 0 25px;
         overflow: hidden;
