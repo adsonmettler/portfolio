@@ -34,11 +34,12 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 10px #050505;
     color: var(--secondary-color);
-    position: fixed; /* Add this line */
-    width: 100%; /* Ensure it covers the full width */
-    top: 0; /* Fix it to the top of the page */
-    left: 0; /* Fix it to the left of the page */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1000; /* Ensure it is above other elements */
+    font-size: 1.25rem;
 }
 
 
@@ -214,7 +215,7 @@ main {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-60%, 30%);
+    transform: translate(-60%, 20%);
     text-align: left;
     z-index: 2;
 }
@@ -257,12 +258,12 @@ main {
     color: var(--accent1-color);
     text-align: left;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 100%;
     margin: 0 0 40px 0;
     padding: 10px;
     padding-right: 100px;
-    line-height: 20px;
+    line-height: 2rem;
 }
 
 
