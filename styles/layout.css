@@ -68,6 +68,7 @@ header {
     top: 1rem;
     right: 2rem;
     padding: 0;
+    
 }
 
 #menu::before {
@@ -378,9 +379,9 @@ main {
     position: absolute;
     top: 210%;
     left: 50%;
-    transform: translateX(-45%);
+    transform: translateX(-50%);
     z-index: 0;
-    width: 130%;
+    width: 100%;
     height: auto;
 }
 
