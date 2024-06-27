@@ -354,6 +354,101 @@ main {
 }
 
 
+/*----------- TIMELINE EXPERIENCE SECTION --------------*/
+
+
+.timeline-container .subtitle {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.4rem;
+    margin: 0 0 0 0;
+}
+
+
+.timeline-container img {
+    display: flex;
+    width: 130%;
+    margin: 100px 0 0 0;
+}
+
+.timeline-grid {
+    display: flex;
+    width: 100%;
+    margin: -300px 0 100px 0;
+}
+
+.tabs {
+    width: 30%;
+    background-color: rgb(57, 215, 255, 0);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+    margin: 0 0 0 0;
+}
+
+.tab-btn {
+    background-color: rgb(57, 215, 255, 0);
+    border: 1px solid rgb(57, 215, 255, 0.2);
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #00eeff;
+    border-radius: 12px;
+    font-size: .8rem;
+}
+
+.tab-btn:hover {
+    background-color: rgb(57, 215, 255, 0.2);
+}
+
+.tab-btn.active {
+    background-color: rgb(57, 215, 255, 0.1);
+    border: 1px solid rgb(57, 215, 255, 1);
+}
+
+.tab-content {
+    flex: 1;
+    margin: 0 10px 0 0;
+    padding: 20px;
+    border-left: 1px solid rgb(57, 215, 255, 1);
+    background-color: rgb(227, 161, 15, 0.05);
+    border-radius: 0 25px 25px 0;
+}
+
+.tab-pane {
+    display: none;
+    width: 100%;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane h2 {
+    font-size: 1.4rem;
+    margin: 0 0 20px 0;
+}
+
+.tab-pane p {
+    font-size: .8rem;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.tab-pane li {
+    font-size: .8rem;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.tab-pane span {
+    font-weight: 700;
+}
+
+
+
 /*----------- CARDS SECTION --------------*/
 
 .title span, form span {
@@ -519,99 +614,7 @@ main {
 }
 
 
-/*----------- TIMELINE EXPERIENCE SECTION --------------*/
 
-
-.timeline-container .subtitle {
-    text-align: center;
-    padding-top: 15px;
-    font-size: 1.4rem;
-    margin: 0 0 0 0;
-}
-
-
-.timeline-container img {
-    display: flex;
-    width: 130%;
-    margin: 70% 0 0 -10%;
-}
-
-.timeline-grid {
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin: -130% 0 25% 0;
-}
-
-.tabs {
-    width: 30%;
-    background-color: rgb(57, 215, 255, 0);
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 15px;
-    margin: 0 0 0 0;
-}
-
-.tab-btn {
-    background-color: rgb(57, 215, 255, 0);
-    border: 1px solid rgb(57, 215, 255, 0.2);
-    padding: 10px;
-    text-align: left;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    color: #00eeff;
-    border-radius: 12px;
-    font-size: .8rem;
-}
-
-.tab-btn:hover {
-    background-color: rgb(57, 215, 255, 0.2);
-}
-
-.tab-btn.active {
-    background-color: rgb(57, 215, 255, 0.1);
-    border: 1px solid rgb(57, 215, 255, 1);
-}
-
-.tab-content {
-    flex: 1;
-    margin: 0 10px 0 0;
-    padding: 20px;
-    border-left: 1px solid rgb(57, 215, 255, 1);
-    background-color: rgb(227, 161, 15, 0.05);
-    border-radius: 0 25px 25px 0;
-}
-
-.tab-pane {
-    display: none;
-    width: 100%;
-}
-
-.tab-pane.active {
-    display: block;
-}
-
-.tab-pane h2 {
-    font-size: 1.4rem;
-    margin: 0 0 20px 0;
-}
-
-.tab-pane p {
-    font-size: .8rem;
-    line-height: 1.5rem;
-    padding-bottom: 10px;
-}
-
-.tab-pane li {
-    font-size: .8rem;
-    line-height: 1.5rem;
-    padding-bottom: 10px;
-}
-
-.tab-pane span {
-    font-weight: 700;
-}
 
 
 /*----------- FORM STYLING --------------*/

@@ -190,18 +190,6 @@
 
     /*-------- INTRO SECTION ----------*/
 
-
-    /* .scroller-container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 45%;
-        margin: 20% 0 0 0;
-    }
-
-    .scroller {
-        display: block;
-    } */
-
     
 
     .scroller[data-animated="true"] {
@@ -293,6 +281,93 @@
     }
 
 
+    /* --------------- TIMELINE SECTION ----------------- */
+
+
+    .timeline-container .title {
+        margin: 0 0 0 0;
+    }
+
+
+    .timeline-container img {
+        width: 100%;
+        margin: 150px 0 0 0;
+    }
+
+    .timeline-grid {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: -55% 0 25% 5%;
+    }
+    
+    .tabs {
+        width: 25%;
+        background-color: rgb(57, 215, 255, 0);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 15px;
+        margin: 0 0 0 10%;
+    }
+    
+    .tab-btn {
+        background-color: rgb(57, 215, 255, 0);
+        border: 1px solid rgb(57, 215, 255, 0.2);
+        padding: 20px;
+        text-align: left;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        color: #00eeff;
+        border-radius: 12px;
+        font-size: 1.4rem;
+    }
+    
+    .tab-btn:hover {
+        background-color: rgb(57, 215, 255, 0.2);
+    }
+    
+    .tab-btn.active {
+        background-color: rgb(57, 215, 255, 0.1);
+        border: 1px solid rgb(57, 215, 255, 0.6);
+    }
+    
+    .tab-content {
+        flex: 1;
+        padding: 80px;
+        border-left: 1px solid rgb(57, 215, 255, 1);
+        margin: 0 15% 0 5%;
+        background-color: rgb(227, 161, 15, 0.05);
+        border-radius: 0 25px 25px 0;
+    }
+    
+    .tab-pane {
+        display: none;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    
+    .tab-pane.active {
+        display: block;
+    }
+
+    .tab-pane h2 {
+        font-size: 2rem;
+        margin: 0 0 25px 0;
+    }
+
+    .tab-pane p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .tab-pane li {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-bottom: 10px;
+    }
+
+
     /*-------- CARDS SECTION ----------*/
 
 
@@ -365,7 +440,7 @@
         color: var(--accent3-color);
         background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
         border: solid 1px rgba(57, 215, 255, 0.4);
-        margin-top: 20px;
+        margin-top: 40px;
         position: relative;
     }
 
@@ -413,7 +488,7 @@
 
     .image img {
         position: relative;
-        margin: -70% 0 5% 100%;
+        margin: -300px 0 5% 100%;
         width: 100%;
         height: auto;
         border-radius: 20px;
@@ -455,97 +530,7 @@
     }
 
 
-    /* --------------- TIMELINE SECTION ----------------- */
-
-    .timeline-container .title {
-        margin: 15% 0 0 0;
-    }
-
-    .timeline-container .subtitle {
-        text-align: center;
-        padding-top: 15px;
-        font-size: 1.4rem;
-        margin: 0 0 0 0;
-    }
-
-
-    .timeline-container img {
-        width: 100%;
-        margin: 0 0 0 0;
-    }
-
-    .timeline-grid {
-        display: flex;
-        width: 100%;
-        height: auto;
-        margin: -50% 0 25% 5%;
-    }
     
-    .tabs {
-        width: 25%;
-        background-color: rgb(57, 215, 255, 0);
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        gap: 15px;
-        margin: 0 0 0 10%;
-    }
-    
-    .tab-btn {
-        background-color: rgb(57, 215, 255, 0);
-        border: 1px solid rgb(57, 215, 255, 0.2);
-        padding: 20px;
-        text-align: left;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        color: #00eeff;
-        border-radius: 12px;
-        font-size: 1.4rem;
-    }
-    
-    .tab-btn:hover {
-        background-color: rgb(57, 215, 255, 0.2);
-    }
-    
-    .tab-btn.active {
-        background-color: rgb(57, 215, 255, 0.1);
-        border: 1px solid rgb(57, 215, 255, 0.6);
-    }
-    
-    .tab-content {
-        flex: 1;
-        padding: 80px;
-        border-left: 1px solid rgb(57, 215, 255, 1);
-        margin: 0 15% 0 5%;
-        background-color: rgb(227, 161, 15, 0.05);
-        border-radius: 0 25px 25px 0;
-    }
-    
-    .tab-pane {
-        display: none;
-        width: 100%;
-        margin: 0 0 0 0;
-    }
-    
-    .tab-pane.active {
-        display: block;
-    }
-
-    .tab-pane h2 {
-        font-size: 2rem;
-        margin: 0 0 25px 0;
-    }
-
-    .tab-pane p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
-
-    .tab-pane li {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        padding-bottom: 10px;
-    }
 
 
     /*----------- FORM STYLING --------------*/
