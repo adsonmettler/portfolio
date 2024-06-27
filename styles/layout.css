@@ -619,9 +619,10 @@ main {
 }
 
 .video video {
-    max-width: 100%;
-    padding-right: 0;
-    margin: -78px 0 0 0;
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: auto;
 }
 
 .video:hover {
