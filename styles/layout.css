@@ -322,7 +322,7 @@ main {
 
 .intro-content .text {
     font-size: 1rem;
-    line-height: 25px;
+    line-height: 1.5rem;
     padding: 0 0 0 0;
     margin: 10px 0 40px 0;
 }
@@ -357,24 +357,40 @@ main {
 /*----------- TIMELINE EXPERIENCE SECTION --------------*/
 
 
+.timeline-container .title {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 3.4rem;
+    margin: 0 0 0 0;
+    z-index: 2;
+}
+
 .timeline-container .subtitle {
     text-align: center;
     padding-top: 15px;
     font-size: 1.4rem;
     margin: 0 0 0 0;
+    z-index: 2;
 }
 
 
 .timeline-container img {
-    display: flex;
+    position: absolute;
+    top: 210%;
+    left: 50%;
+    transform: translateX(-45%);
+    z-index: 0;
     width: 130%;
-    margin: 100px 0 0 0;
+    height: auto;
 }
 
 .timeline-grid {
     display: flex;
-    width: 100%;
-    margin: -300px 0 100px 0;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
 }
 
 .tabs {
@@ -515,7 +531,7 @@ main {
     font-size: 3rem;
     font-weight: 900;
     max-width: 100%;
-    margin: 10% 15% 0 15%;
+    margin: 20% 15% 0 15%;
     }
 
 
