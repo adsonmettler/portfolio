@@ -236,8 +236,12 @@
     .scroller {
         margin: 140px 0 0 0;
         width: 100%;
+        z-index: 5;
     }
 
+    .scroller-inner img {
+        width: 150px;
+    }
 
     .intro-container {
         display: flex;
