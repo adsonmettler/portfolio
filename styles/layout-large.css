@@ -124,7 +124,7 @@
         width: 100%;
         padding: 200px 0 200px 0;
         margin: 0 0 0 0;
-        background: radial-gradient(circle at top left, rgba(74, 219, 255, 0.8), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32));
+        background: radial-gradient(circle at top left, rgb(255, 245, 180, 0.9), rgba(74, 219, 255, 0.3), rgba(74, 219, 255, 0.08), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32));
         border-radius: 9999px;
     }
 
