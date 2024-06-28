@@ -100,13 +100,9 @@
     /*-------- HERO SECTION ----------*/
 
 
-    .hero-image2 {
-        display: none;
-    }
-
     .hero-image1 {
-        display: flex;
-        max-width: 100%;
+        display: none;
+        width: 100%;
         margin: 35px 0 0 0;
         -webkit-mask-image: linear-gradient(
             rgb(0, 23, 32, 0.8),
@@ -119,71 +115,47 @@
             rgb(0, 23, 32, 0)
             );
     }
-
+    
     .spaceman-hero {
-        width: 40%;
-        top: 25%;
-        left: 60%;
+        width: 25%;
+        left: 75%;
+        margin: -20px 0 0 0;
     }
     
-    @keyframes slideFade {
-        0% {
-            opacity: 0.5;
-            transform: translateY(20px); /* Starts 20px lower */
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0); /* Ends at the original position */
-        }
-    }
-    
-    @keyframes randomMove {
-        0% {
-            transform: translate(0, 0);
-        }
-        25% {
-            transform: translate(-4px, 4px);
-        }
-        50% {
-            transform: translate(4px, -4px);
-        }
-        75% {
-            transform: translate(-4px, -4px);
-        }
-        100% {
-            transform: translate(0, 0);
-        }
+    .hero-container {
+        position: relative;
+        width: 100%;
+        padding: 200px 0 200px 0;
+        margin: 0 0 0 0;
+        background: radial-gradient(circle at top left, rgba(74, 219, 255, 0.8), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32));
+        border-radius: 9999px;
+        
     }
 
-    .hero-container .flexbox-content {
-        position: absolute;
-        top: 0;
-        left: 44%;
-        transform: translate(-50%, 20%);
-        text-align: left;
-        z-index: 2;
+    .flexbox-content {
+        margin: -250px 0 0 0;      
     }
 
     .hero-container h1 {
         color: var(--accent3-color);
-        text-align: left;
+        text-align: center;
         font-weight: 900;
-        font-size: 4.6rem;
+        font-size: 4.4rem;
         width: 100%;
         height: auto;
-        margin: 150px 0 0 0;
+        margin: 0 0 0 0;
         padding: 5px;
     }
     
     .hero-container p {
         color: var(--accent1-color);
-        text-align: left;
+        text-align: center;
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         width: 100%;
-        margin: 0 200px 0 0;
+        margin: 0 0 0 0;
         padding: 5px;
-        line-height: 35px;
+        line-height: 2rem;
     }
 
 
@@ -249,7 +221,7 @@
         max-width: 100%;
         height: auto;
         border-radius: 18px;
-        margin: 0 0 0 0;
+        margin: -100px 0 0 0;
     }
 
     .intro-content {

@@ -158,14 +158,14 @@ main {
         rgb(0, 23, 32, 0.8) 80%,
         rgb(0, 23, 32, 0)
         );
-    opacity: 0.3;
 }
 
+
+
 .spaceman-hero {
-    position: absolute;
-    top: 85%;
-    bottom: 0;
-    left: 50%;
+    position: relative;
+    left: 25%;
+    margin: 100px 0 0 0;
     width: 50%;
     height: auto;
     z-index: 1;
@@ -207,23 +207,20 @@ main {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 10px 0 10px 0;
-    background: linear-gradient(to left, rgba(57, 215, 255, 0.03), rgb(0, 23, 32));
+    padding: 0 0 0 0;
+    background: radial-gradient(circle at top left, rgba(74, 219, 255, 0.8), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32));
+    border-radius: 9999px;
 }
 
-.hero-image1 {
-    width: 100%;
-    height: auto;
-}
 
-.hero-container .flexbox-content {
-    margin: 120px 20px 0 40px;
-    align-items: center;
+
+.flexbox-content {
+    margin: 0 30px 0 30px;
 }
 
 .hero-container h1 {
     color: var(--accent3-color);
-    text-align: left;
+    text-align: center;
     font-weight: 900;
     font-size: 2.6rem;
     width: 100%;
@@ -256,6 +253,7 @@ main {
 .hero-container p {
     font-weight: 400;
     font-size: 1rem;
+    text-align: center;
     width: 100%;
     margin: 0 0 0 0;
     line-height: 2rem;
@@ -265,7 +263,7 @@ main {
 /*-------- INTRO SECTION ----------*/
 
 .scroller {
-    margin: 0 0 0 0;
+    margin: 0 0 50px 0;
     
 }
 
@@ -274,7 +272,7 @@ main {
 }
 
 .intro-container {
-    margin: 40% 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 .scroller[data-animated="true"] {
