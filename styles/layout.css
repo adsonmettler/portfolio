@@ -165,7 +165,7 @@ main {
 .spaceman-hero {
     position: relative;
     left: 25%;
-    margin: 100px 0 0 0;
+    margin: 180px 0 0 0;
     width: 50%;
     height: auto;
     z-index: 1;
@@ -272,7 +272,7 @@ main {
 
 .scroller {
     grid-row-start: 2;
-    margin: 0 0 50px 0;
+    margin: 50px 0 50px 0;
     
 }
 
