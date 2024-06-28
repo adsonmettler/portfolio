@@ -564,7 +564,7 @@ main {
 .card-grid h2 {
     text-align: center;
     width: 100%;
-    margin: 5% 0 5% 0;
+    margin: 40px 0 20px 0;
     font-size: 1.6rem;
     font-weight: 900;
 }
@@ -573,7 +573,7 @@ main {
     width: 100%;
     margin: 0 0 5% 0;
     line-height: 25px;
-    color: rgba(57, 215, 255, 1);
+    color: rgb(188, 188, 188);
     font-size: .8rem;
 }
 
@@ -599,7 +599,7 @@ main {
 
 .image img {
     position: relative;
-    margin: 10% 0 0 0;
+    margin: 20px 0 0 0;
     width: 100%;
     height: auto;
     border-radius: 20px;
@@ -610,7 +610,7 @@ main {
 
 .image img:hover {
     box-shadow: 0 20px 40px rgba(57, 215, 255, 0.3);
-    transform: translateY(8px);
+    transform: translateY(-8px);
 }
 
 
@@ -636,7 +636,7 @@ main {
 
 .video:hover {
     box-shadow: 0 20px 40px rgb(57, 215, 255, 0.3);
-    transform: translateY(8px);
+    transform: translateY(-8px);
 }
 
 
