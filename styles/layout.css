@@ -372,16 +372,14 @@ main {
     text-align: center;
     padding-top: 15px;
     font-size: 1.25rem;
-    margin: 0 0 0 0;
+    margin: 0 0 60px 0;
     z-index: 2;
 }
 
 
 .timeline-container img {
     position: absolute;
-    top: 210%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 240%;
     z-index: 0;
     width: 100%;
     height: auto;
@@ -572,7 +570,7 @@ main {
     width: 100%;
     margin: 0 0 5% 0;
     line-height: 25px;
-    color: rgb(188, 188, 188);
+    color: rgb(255, 255, 255);
     font-size: .8rem;
 }
 
@@ -603,12 +601,12 @@ main {
     height: auto;
     border-radius: 20px;
     border: solid 1px rgba(57, 215, 255, 0.4);
-    box-shadow: 0 20px 40px rgba(57, 215, 255, 0.2);
+    box-shadow: 0 2px 40px rgba(57, 215, 255, 0.2);
     transition: transform 0.2s ease-in-out; /* Smooth transition */
 }
 
 .image img:hover {
-    box-shadow: 0 20px 40px rgba(57, 215, 255, 0.3);
+    box-shadow: 0 2px 40px rgba(57, 215, 255, 0.3);
     transform: translateY(-8px);
 }
 
@@ -622,7 +620,7 @@ main {
     border-radius: 20px;
     border: solid 1px rgba(57, 215, 255, 0.4);
     margin: 20px 0 0 0;
-    box-shadow: 0 20px 40px rgba(57, 215, 255, 0.2);
+    box-shadow: 0 2px 40px rgba(57, 215, 255, 0.2);
     transition: transform 0.2s ease-in-out; /* Smooth transition */
 }
 
@@ -634,7 +632,7 @@ main {
 }
 
 .video:hover {
-    box-shadow: 0 20px 40px rgb(57, 215, 255, 0.3);
+    box-shadow: 0 2px 40px rgb(57, 215, 255, 0.3);
     transform: translateY(-8px);
 }
 

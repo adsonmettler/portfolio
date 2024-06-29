@@ -73,7 +73,8 @@
         color: var(--secondary-color);
         border-radius: 8px;
         padding: 10px;
-        
+        transition: background-color 0.3s;
+        transition: transform 0.3s;
         margin: 0 0 0 0;
         font-weight: 600;
         font-size: .7rem;
@@ -246,6 +247,7 @@
         font-size: .8rem;
         text-decoration: none;
         margin: 0 0 0 0;
+        transition: background-color 0.3s;
     }
 
     .button-1:hover {
@@ -255,6 +257,7 @@
         font-weight: 600;
         box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
         transform: translateY(-4px);
+        transition: background-color 0.3s;
     }
 
 
@@ -312,7 +315,7 @@
         transition: background-color 0.3s;
         color: #00eeff;
         border-radius: 12px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .tab-btn:hover {
@@ -458,7 +461,7 @@
         width: 100%;
         margin: 0 0 5% 0;
         line-height: 1.5rem;
-        color: rgb(188, 188, 188);
+        color: rgb(255, 255, 255);
         font-size: 1rem;
     }
 
@@ -479,6 +482,7 @@
         width: 100%;
         margin: 0 0 0 0;
         font-size: .8rem;
+        transition: background-color 0.3s;
     }
 
     .video video {
