@@ -236,6 +236,10 @@
         text-align: left;
     }
 
+    .intro-content span {
+        font-weight: 800;
+    }
+
     .button-1 {
         position: relative;
         width: 100%;
