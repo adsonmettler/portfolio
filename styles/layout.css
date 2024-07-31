@@ -79,8 +79,9 @@ header {
 /* ▼ */
 
 #menu.open::before {
-	content: "☰";
+	content: "X";
     color: var(--accent1-color);
+    font-weight: 600;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
