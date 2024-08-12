@@ -136,13 +136,13 @@ main {
 }
 
 .thanks-page {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
-    max-width: 100%;
+    max-width: 80%;
     margin-top: 220px;
     padding-bottom: 200px;
     margin-bottom: 100px;
-    line-height: 40px;
+    line-height: 60px;
     text-align: center;
     display: block;
     color: var(--accent3-color);
@@ -152,6 +152,7 @@ main {
 .thanks-page p {
     font-size: 1.2rem;
     margin-top: 2rem;
+    line-height: 40px;
 }
 
 
