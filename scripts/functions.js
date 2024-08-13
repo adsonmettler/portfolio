@@ -149,3 +149,24 @@ const services = [
         // Allow form to submit and navigate to thanks.html
     });
 });
+
+
+// Equal Height
+
+window.addEventListener('load', () => {
+    const cards = document.querySelectorAll('.card-content');
+    let maxHeight = 3;
+
+    // Find the maximum height
+    cards.forEach(card => {
+        const cardHeight = card.offsetHeight;
+        if (cardHeight > maxHeight) {
+            maxHeight = cardHeight;
+        }
+    });
+
+    // Set all cards to the maximum height
+    cards.forEach(card => {
+        card.style.height = `${maxHeight}px`;
+    });
+});
