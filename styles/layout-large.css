@@ -428,16 +428,13 @@
         .card-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-            grid-template-rows: auto; /* Adjusts row heights automatically */
+            align-items: start;
             gap: 50px; /* Space between grid items */
             max-width: 90%;
             margin: 0 auto; /* Centers the grid within its parent container */
         }
         
         .card-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
             width: 100%;
             border-radius: 20px;
             padding: 10px;
