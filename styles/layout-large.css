@@ -499,6 +499,10 @@
         width: 100%;
         height: auto;
     }
+
+    .video {
+        margin: 0;
+    }
     
 
     
