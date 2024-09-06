@@ -387,6 +387,7 @@ main {
 
 
 .timeline-container img {
+    display: none;
     position: absolute;
     top: 640%;
     z-index: 0;
