@@ -285,7 +285,7 @@
     }
 
     .timeline-container .subtitle {
-        margin: 0 0 120px 0;
+        margin: 0 0 1em 0;
         font-size: 1.25rem;
         z-index: 4;
     }
