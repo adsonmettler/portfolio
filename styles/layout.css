@@ -388,9 +388,9 @@ main {
 
 .timeline-container img {
     position: absolute;
-    top: 240%;
+    top: 640%;
     z-index: 0;
-    width: 100%;
+    width: 120%;
     height: auto;
 }
 
@@ -553,13 +553,16 @@ main {
 .card-content {
     width: 100%;
     border-radius: 20px;
-    padding: 20px;
+    padding: 40px;
     color: var(--accent3-color);
     background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
     border: solid 1px rgba(57, 215, 255, 0.4);
-    margin-top: 20px;
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
     position: relative;
 }
+
+
+
 
 .text {
     text-align: center;
@@ -570,17 +573,17 @@ main {
 .card-grid h2 {
     text-align: center;
     width: 100%;
-    margin: 40px 0 20px 0;
+    margin: 15px 0 0 0;
     font-size: 1.6rem;
     font-weight: 900;
 }
 
 .card-grid p {
     width: 100%;
-    margin: 0 0 5% 0;
+    margin: 0 0 0 0;
     line-height: 25px;
     color: rgb(255, 255, 255);
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .line-container {
@@ -600,24 +603,23 @@ main {
     width: 100%;
     font-size: .8rem;
     transition: background-color 0.3s;
+    
 }
 
 
 .image img {
     display: block;
     position: relative;
-    margin: 40px 0 0 0;
+    margin: 5px 0 0 0;
     width: 100%;
     height: auto;
     border-radius: 20px;
-    border: solid 1px rgba(57, 215, 255, 0.4);
-    box-shadow: 0 2px 40px rgba(57, 215, 255, 0.2);
     transition: transform 0.2s ease-in-out; /* Smooth transition */
 }
 
 .image img:hover {
     box-shadow: 0 2px 40px rgba(57, 215, 255, 0.3);
-    transform: translateY(-8px);
+    transition: box-shadow 0.3s;
 }
 
 
@@ -628,9 +630,7 @@ main {
     overflow: hidden;
     width: 100%;
     border-radius: 20px;
-    border: solid 1px rgba(57, 215, 255, 0.4);
-    margin: 40px 0 0 0;
-    box-shadow: 0 2px 40px rgba(57, 215, 255, 0.2);
+    margin: 5px 0 0 0;
     transition: transform 0.2s ease-in-out; /* Smooth transition */
 }
 
@@ -643,7 +643,6 @@ main {
 
 .video:hover {
     box-shadow: 0 2px 40px rgb(57, 215, 255, 0.3);
-    transform: translateY(-8px);
 }
 
 
