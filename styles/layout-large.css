@@ -99,7 +99,7 @@
 
 
     .hero-image1 {
-        
+        animation: fade 1s ease-in 0.1s forwards;
         width: 50%;
         margin: 0 0 0 0;
         left: 25%;
