@@ -146,12 +146,21 @@
         color: var(--accent3-color);
         text-align: center;
         font-weight: 900;
-        font-size: 6rem;
+        font-size: 4.4rem;
         width: 100%;
         height: auto;
         margin: 0 0 0 0;
-        padding: 5px;
     }
+
+
+    .hero-container .subtitle {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #ffffff;
+        margin-bottom: 30px;
+        animation: fade 1s ease-in 0.1s forwards;
+    }
+
     
     .hero-container p {
         color: var(--accent1-color);
@@ -160,9 +169,10 @@
         font-size: 1.25rem;
         width: 100%;
         margin: 0 0 0 0;
-        padding: 5px;
         line-height: 2rem;
     }
+
+    
 
 
 
