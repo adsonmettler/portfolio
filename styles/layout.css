@@ -217,7 +217,7 @@ main {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 0 0 40px 0;
+    padding: 20px 0 100px 0;
     background: radial-gradient(circle at top left, rgb(255, 245, 180, 0.9), rgb(74, 219, 255, 0.3), rgb(74, 219, 255, 0.1), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32));
     border-radius: 9999px;
 }
