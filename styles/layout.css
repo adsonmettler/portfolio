@@ -58,6 +58,8 @@ header {
 }
 
 
+
+
 #menu {
 	font-size: 2rem;
     font-family: "Montserrat";
@@ -167,10 +169,6 @@ main {
     margin: 90px 0 0 0;
     right: 5%;
 }
-
-
-
-
 
 
 
@@ -341,7 +339,7 @@ main {
     width: 100%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    border-radius: 8px;
+    border-radius: 18px;
     padding: 10px 30px 10px 30px;
     font-weight: 600;
     font-size: .8rem;
@@ -354,7 +352,6 @@ main {
     border: solid 1px var(--primary-color);
     font-weight: 600;
     box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
-    transform: translateY(-4px);
 }
 
 
@@ -595,8 +592,6 @@ main {
 .card-grid .button-1 {
     width: 100%;
     font-size: .8rem;
-    transition: background-color 0.3s;
-    
 }
 
 
@@ -607,12 +602,11 @@ main {
     width: 100%;
     height: auto;
     border-radius: 20px;
-    transition: transform 0.2s ease-in-out; /* Smooth transition */
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
 }
 
 .image img:hover {
     box-shadow: 0 2px 40px rgba(57, 215, 255, 0.3);
-    transition: box-shadow 0.3s;
 }
 
 
@@ -624,7 +618,7 @@ main {
     width: 100%;
     border-radius: 20px;
     margin: 5px 0 0 0;
-    transition: transform 0.2s ease-in-out; /* Smooth transition */
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
 }
 
 .video video {
@@ -733,22 +727,19 @@ form h2 {
     border: none;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    box-shadow: 0 0 10px rgba(57, 215, 255, 0.4);
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 15px;
-    font-weight: 600;
-    font-size: .8rem;
+    font-weight: 500;
+    font-size: .9rem;
     width: 100%;
     margin: 10px 0 0 0;
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
 }
 
 .wf1 input[type="submit"]:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    box-shadow: 0 0 20px rgba(57, 215, 255, 0.4);
-    transform: translateY(-4px);
-    
+    box-shadow: 0 0 20px rgba(57, 215, 255, 0.5);
 }
 
 .wf1 label input:required {
