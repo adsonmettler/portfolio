@@ -767,7 +767,7 @@ form h2 {
 .footer {
     background-color: #000000;
     color: white;
-    padding: 40px 20px;
+    padding: 40px 0 0 0;
 }
 
 .footer-container {
@@ -786,15 +786,15 @@ form h2 {
 }
 
 .footer-section {
-    margin: 10px;
-    flex-basis: 10%;
+    margin: 0 40px 0 80px;
+    
 }
 
 .footer-section h4 {
-    font-size: .9rem;
+    font-size: .8rem;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .footer-section ul {
@@ -816,6 +816,7 @@ form h2 {
 
 .footer-section ul li a:hover {
     color: #00eeff;
+    text-decoration: underline;
 }
 
 /* Social Media Links Styling */
@@ -845,7 +846,7 @@ form h2 {
     width: 100%;
     border: 0;
     border-top: 1px solid rgba(57, 215, 255, 0.5);
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
 }
 
 /* Footer Bottom */
@@ -881,9 +882,7 @@ form h2 {
         text-align: center;
     }
     
-    .footer-logo {
-        margin-bottom: 10px;
-    }
+    
 }
 
 
