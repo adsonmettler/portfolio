@@ -166,7 +166,7 @@ main {
 .hero-image1 {
     position: relative;
     width: 100%;
-    margin: 90px 0 0 0;
+    margin: 120px 0 0 0;
     right: 5%;
 }
 
@@ -250,7 +250,7 @@ main {
 
 .hero-container p {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-align: center;
     width: 100%;
     margin: 0 0 0 0;
@@ -797,7 +797,7 @@ form h2 {
 
 .footer-section h4 {
     font-size: .8rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -809,8 +809,10 @@ form h2 {
 
 /* Vertical Links for Other Sections */
 .footer-section ul li {
-    margin-bottom: 10px;
+    
     font-size: .8rem;
+    color: #ccc;
+    line-height: 1.2rem;
 }
 
 .footer-section ul li a {
@@ -850,7 +852,7 @@ form h2 {
 .footer-separator {
     width: 100%;
     border: 0;
-    border-top: 1px solid rgba(57, 215, 255, 0.5);
+    border-top: 1px solid rgba(57, 215, 255, 0.3);
     margin: 0 0 10px 0;
 }
 
@@ -858,9 +860,9 @@ form h2 {
 .footer-bottom {
     display: flex;
     justify-content: left;
-    align-items: center;
-    gap: 10em;
-    width: 55%;
+    align-items: left;
+    gap: 2em;
+    
     margin-top: 0;
     font-size: .8rem;
     color: #989898;
@@ -868,12 +870,13 @@ form h2 {
 }
 
 .footer-bottom p {
-    margin: 0;
+    margin-top: .8rem;
 }
 
 /* Logo Position */
 .footer-logo img {
-    max-width: 150px;
+    max-width: 40px;
+    margin-bottom: .2rem;
 }
 
 /* Responsive */
@@ -884,7 +887,7 @@ form h2 {
     
     .footer-bottom {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         gap: 1em;
     }
 
