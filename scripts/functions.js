@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // HAMBURGER MENU function
 document.addEventListener('DOMContentLoaded', function() {
-    const menuButton = document.getElementById('menu');
-    const navigation = document.querySelector('nav .navigation');
+    const menuButton = document.getElementById('menubutton');
+    const navigation = document.querySelector('#animatemenu');
 
     menuButton.addEventListener('click', function() {
         menuButton.classList.toggle('open');
