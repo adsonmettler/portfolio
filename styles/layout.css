@@ -644,6 +644,71 @@ main {
 
 
 
+/*----------- TESTIMONIALS STYLING --------------*/
+
+.testimonials-container {
+    padding: 20px; /* Reduce padding for smaller screens */
+}
+
+.carousel {
+    display: flex; /* Ensure it's a flex container */
+    flex-direction: column; /* Stack the cards vertically */
+    align-items: center; /* Center cards */
+    position: relative; /* Allow positioning of buttons */
+}
+
+.carousel-wrapper {
+    display: flex; /* Align buttons and cards in a row */
+    align-items: center; /* Center buttons vertically */
+    justify-content: space-between; /* Space buttons on either side of the card */
+    position: relative; /* Position relative for absolute button positioning */
+}
+
+.testimonial-card {
+    flex: 0 0 auto; /* Allow cards to auto size based on content */
+    width: 100%; /* Full width for each card */
+    max-width: 90%; /* Optional: limit max width for better appearance */
+    margin: 20px 0; /* Space above and below cards */
+}
+
+.testimonial-image {
+    width: 80px; /* Smaller image for mobile */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.carousel-btn {
+    font-size: 2.5rem; /* Smaller button size */
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: rgba(57, 215, 255, 0.8);
+    z-index: 1; /* Ensure buttons appear above cards */
+}
+
+/* Position buttons relative to the card */
+.carousel-btn.prev {
+    margin-right: auto; /* Push prev button to the left */
+}
+
+.carousel-btn.next {
+    margin-left: auto; /* Push next button to the right */
+}
+
+.testimonial-quote {
+    font-size: 0.85rem; /* Smaller font size for quotes */
+}
+
+.testimonial-name {
+    font-size: 0.9rem; /* Smaller font size for names */
+}
+
+.testimonial-card p {
+    font-size: 0.85rem; /* Smaller font size for additional text */
+}
 
 
 /*----------- FORM STYLING --------------*/

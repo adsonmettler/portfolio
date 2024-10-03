@@ -170,3 +170,69 @@ const services = [
 //         card.style.height = `${maxHeight}px`;
 //     });
 // });
+
+
+
+// TESTIMONIALS CARDS Fetch the JSON data
+fetch('./data/testimonials.json')
+  .then(response => response.json())
+  .then(data => {
+    const testimonialsContainer = document.querySelector('.carousel'); // Fix selector to match HTML structure
+
+    data.forEach(testimonial => {
+      // Create card element
+      const card = document.createElement('div');
+      card.classList.add('testimonial-card');
+      
+      // Set inner HTML for the card in the requested sequence
+      card.innerHTML = `
+        <div class="card-content">
+          <img src="./images/${testimonial.image}" alt="${testimonial.name}" class="testimonial-image">
+          <blockquote class="testimonial-quote">"${testimonial.quote}"</blockquote>
+          <p class="testimonial-name"><strong>${testimonial.name}</strong>, ${testimonial.jobTitle} at ${testimonial.company}</p>
+        </div>
+      `;
+      
+      // Append card to the testimonials container
+      testimonialsContainer.appendChild(card);
+    });
+
+    // Initialize the carousel functionality
+    initCarousel();
+  })
+  .catch(error => {
+    console.error('Error fetching testimonials:', error);
+  });
+
+// Carousel logic
+function initCarousel() {
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  const carousel = document.querySelector('.carousel');
+  const cards = carousel.children;
+  let currentIndex = 0;
+  const totalCards = cards.length;
+  
+  function showCard(index) {
+    // Hide all cards
+    for (let i = 0; i < totalCards; i++) {
+      cards[i].style.display = 'none';
+    }
+    // Display the current card
+    cards[index].style.display = 'block';
+  }
+
+  // Initial card display
+  showCard(currentIndex);
+
+  // Add event listeners for the carousel buttons
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? totalCards - 1 : currentIndex - 1;
+    showCard(currentIndex);
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === totalCards - 1) ? 0 : currentIndex + 1;
+    showCard(currentIndex);
+  });
+}
