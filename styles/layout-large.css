@@ -513,7 +513,7 @@
     .carousel {
         display: flex;
         overflow: hidden;
-        width: 90%;
+        width: 100%;
         height: auto;
     }
     
@@ -530,11 +530,11 @@
     
     
     .carousel-btn.prev {
-        left: 10px;
+        left: 40px;
     }
     
     .carousel-btn.next {
-        right: 10px;
+        right: 120px;
     }
 
     .testimonial-image {
@@ -564,6 +564,12 @@
     .testimonial-card p {
         font-size: 1rem;
         margin-bottom: 10px;
+    }
+
+    strong {
+        background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     
 

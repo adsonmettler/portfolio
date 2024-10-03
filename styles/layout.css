@@ -707,6 +707,12 @@ main {
     margin-top: 20px;
 }
 
+strong {
+    background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /*----------- FORM STYLING --------------*/
 
