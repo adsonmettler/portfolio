@@ -647,11 +647,11 @@ main {
 /*----------- TESTIMONIALS STYLING --------------*/
 
 .testimonials-container {
-    padding: 20px; /* Reduce padding for smaller screens */
+    padding: 0 20px 20px 20px; /* Reduce padding for smaller screens */
 }
 
 .carousel {
-    display: flex; /* Ensure it's a flex container */
+    display: flex;
     flex-direction: column; /* Stack the cards vertically */
     align-items: center; /* Center cards */
     position: relative; /* Allow positioning of buttons */
@@ -702,12 +702,9 @@ main {
     font-size: 0.85rem; /* Smaller font size for quotes */
 }
 
-.testimonial-name {
-    font-size: 0.9rem; /* Smaller font size for names */
-}
-
 .testimonial-card p {
-    font-size: 0.85rem; /* Smaller font size for additional text */
+    font-size: 0.9rem; /* Smaller font size for additional text */
+    margin-top: 20px;
 }
 
 
