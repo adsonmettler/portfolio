@@ -394,7 +394,7 @@
         position: absolute;
         width: 20%;
         height: auto;
-        top: 3500px;
+        top: 3000px;
         margin: 0 0 0 0;
         animation: slideFade 1s ease-in-out 0.1s forwards, randomMove-1 12s ease-in-out 1.1s infinite; /* Added 'randomMove' animation */
         opacity: 0;
