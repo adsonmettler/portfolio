@@ -499,22 +499,20 @@
 
 
     .testimonials-container {
-        padding: 20px 200px;
+        width: 80%;
+        margin: 0 auto;
         text-align: center;
     }
     
-    .carousel-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
     
     .carousel {
         display: flex;
         overflow: hidden;
-        width: 100%;
         height: auto;
+    }
+
+    .card-content p {
+        font-size: 1rem;
     }
     
     .carousel-btn {
@@ -534,7 +532,7 @@
     }
     
     .carousel-btn.next {
-        right: 120px;
+        right: 40px;
     }
 
     .testimonial-image {
@@ -554,17 +552,7 @@
     }
 
     
-    .testimonial-card {
-        flex: 0 0 100%;
-        box-sizing: border-box;
-        padding: 20px;
-        transition: transform 0.5s ease-in-out;
-    }
     
-    .testimonial-card p {
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
 
     strong {
         background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
@@ -578,7 +566,7 @@
 
     form {
         width: 52%;
-        margin: 8rem 0 0 25%;
+        margin: 5rem 0 0 25%;
         z-index: 10;
     }
 

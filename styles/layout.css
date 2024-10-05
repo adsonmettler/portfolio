@@ -661,15 +661,10 @@ main {
     display: flex; /* Align buttons and cards in a row */
     align-items: center; /* Center buttons vertically */
     justify-content: space-between; /* Space buttons on either side of the card */
-    position: relative; /* Position relative for absolute button positioning */
+    position: relative;
 }
 
-.testimonial-card {
-    flex: 0 0 auto; /* Allow cards to auto size based on content */
-    width: 100%; /* Full width for each card */
-    max-width: 90%; /* Optional: limit max width for better appearance */
-    margin: 20px 0; /* Space above and below cards */
-}
+
 
 .testimonial-image {
     width: 80px; /* Smaller image for mobile */
