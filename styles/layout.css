@@ -650,6 +650,16 @@ main {
     padding: 0 20px 20px 20px; /* Reduce padding for smaller screens */
 }
 
+.testimonials-content {
+    width: 100%;
+    border-radius: 20px;
+    padding: 40px;
+    color: var(--accent3-color);
+    background: linear-gradient(to right, rgba(57, 215, 255, 0.15), rgb(0, 23, 32));
+    border: solid 1px rgba(57, 215, 255, 0.4);
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
 .carousel {
     display: flex;
     flex-direction: column; /* Stack the cards vertically */
@@ -830,6 +840,22 @@ form h2 {
 .wf1 select:required:valid {
     border-left: solid 6px #00eeff;
 }
+
+
+
+.card-content, .intro-container, .timeline-container {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start below the viewport */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+    
+}
+
+.card-content.in-view, .intro-container.in-view, .timeline-container.in-view {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to the original position */
+}
+
+
 
 
 

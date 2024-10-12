@@ -515,7 +515,7 @@
         height: auto;
     }
 
-    .card-content p {
+    .testimonials-content p {
         font-size: 1rem;
     }
     
@@ -659,6 +659,25 @@
     width: 300px;
     margin: 5% 0 2rem 6%;
 }
+
+
+
+/* Membership card animation */
+
+    .card-content, .intro-container, .timeline-container {
+        opacity: 0; /* Initially hidden */
+        transform: translateY(50px); /* Start below the viewport */
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+        
+    }
+    
+    .card-content.in-view, .intro-container.in-view, .timeline-container.in-view {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to the original position */
+    }
+
+    
+
 
 
     /* ------- FOOTER -------- */

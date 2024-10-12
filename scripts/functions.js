@@ -186,7 +186,7 @@ fetch('./data/testimonials.json')
       
       // Set inner HTML for the card in the requested sequence
       card.innerHTML = `
-        <div class="card-content">
+        <div class="testimonials-content">
           <img src="./images/${testimonial.image}" alt="${testimonial.name}" class="testimonial-image">
           <blockquote class="testimonial-quote">"${testimonial.quote}"</blockquote>
           <p class="testimonial-name"><strong>${testimonial.name}</strong>, ${testimonial.jobTitle} at ${testimonial.company}</p>
