@@ -1,6 +1,6 @@
 Hi!
 
-Are you searching for a Marketing Specialist to bring your idea to life? Look no further!
+Are you searching for a **Marketing Specialist** to bring your idea to life? Look no further!
 
 As an experienced professional in the field, I understand the importance of having a visually stunning, functional, and accessible website that represents your unique brand and engages your audience.
 
