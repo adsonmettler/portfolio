@@ -135,46 +135,63 @@
     
     
     .hero-container {
-        position: relative;
-        width: 100%;
-        padding: 0 0 100px 0;
-        margin: 0 0 0 0;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        max-width: 1440px;
+        padding: 1em;
+        margin: 2em auto;
         background: radial-gradient(circle at top left, rgb(255, 245, 180, 0.9), rgba(74, 219, 255, 0.3), rgba(74, 219, 255, 0.08), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32));
         border-radius: 9999px;
+        
     }
 
-    .flexbox-content {
-        margin: -100px 0 0 0;      
-    }
+    
 
-    .hero-container h1 {
+    .hero-content h1 {
         color: var(--accent3-color);
-        text-align: center;
+        text-align: left;
         font-weight: 900;
         font-size: 4.4rem;
         width: 100%;
         height: auto;
+        margin: 3em 0 0 2em;
+    }
+
+    .hero-content {
         margin: 0 0 0 0;
+        
     }
 
 
-    .hero-container .subtitle {
-        font-size: 2.2rem;
+    .hero-content .subtitle {
+        font-size: 2rem;
         line-height: 2.2rem;
+        text-align: left;
         color: #ffffff;
-        margin-bottom: 30px;
+        margin: 0 0 0 4.2em;
         animation: fade 1s ease-in 0.1s forwards;
     }
 
-    
-    .hero-container p {
+    .hero-text {
+        margin: 0;
+        width: 50%;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+        margin: 1em 0 0 0;
+    }
+
+
+    .hero-text p {
         color: var(--accent1-color);
-        text-align: center;
+        text-align: left;
         font-weight: 400;
-        font-size: 1.25rem;
+        font-size: 1rem;
+        text-transform: uppercase;
         width: 100%;
-        margin: 0 0 0 0;
         line-height: 2rem;
+        letter-spacing: .1rem;
     }
 
     
@@ -241,12 +258,12 @@
         justify-content: flex-end;
         max-width: 100%;
         height: auto;
-        border-radius: 18px;
-        margin: 0 100px 60px 0;
+        margin: 2em auto;
     }
 
     .intro-content {
         z-index: 5;
+        margin: 4em 10% 4em 0;
     }
 
     .intro-content h2 {
@@ -256,7 +273,8 @@
 
 
     .intro-content p {
-        padding-top: 20px;
+        padding-top: 1em;
+        line-height: 2rem;
         text-align: left;
     }
 
@@ -414,7 +432,15 @@
         font-size: 2.8rem;
         font-weight: 900;
         max-width: 100%;
-        margin: 1em 0 1em 0;
+        margin: 1em auto;
+        }
+
+
+        .title span, form span {
+            background: linear-gradient(to right, rgb(255, 245, 180), rgb(227, 161, 15));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 4rem;
         }
 
 
@@ -443,7 +469,14 @@
 
     .text {
         text-align: center;
-        padding: 25px;
+        padding: 2em;
+        line-height: 2rem;
+        
+    }
+
+    .text .role-text {
+        color: var(--accent1-color);
+        margin: 1em 0 1em 0;
     }
 
 
@@ -685,5 +718,74 @@
     footer {
         margin-top: 80px;
     }
+
+
+
+    /* ------- PROJECT ROWS -------- */
+
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    .project-row {
+        display: flex;
+        justify-content: space-between; /* Space between items */
+        align-items: center;
+        padding: 1em;
+        background: var(--secondary-color);
+        border-top: .5px solid var(--accent1-color);
+        border-left: none;
+        border-right: none;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+
+    .project-row:hover {
+        background-color: var(--accent2-color);
+    }
+    
+    .project-details {
+        display: flex;
+        justify-content: space-between; /* Space out elements */
+        width: 100%; /* Use full width */
+    }
+    
+    .project-index {
+        flex: 0 0 50px; /* Fixed width for index */
+    }
+    
+    .project-company,
+    .project-role,
+    .project-year {
+        flex: 1; /* Take equal space */
+        text-align: left;
+    }
+    
+    .live-project-button {
+        background-color: transparent;
+        color: var(--accent1-color);
+        text-decoration: none;
+        padding: 10px 15px;
+        border: none;
+        transition: background-color 0.3s;
+        flex: 0 0 auto; /* Allow button to take only necessary space */
+        cursor: pointer;
+    }
+    
+    .live-project-button:hover {
+        color: var(--primary-color);
+    }
+    
+    .project-image {
+        display: none; /* Start hidden */
+        width: 100%; /* Make image responsive */
+        margin-top: 10px; /* Add some space above the image */
+        border-radius: 8px; /* Round image corners */
+    }
+
+
 
 }

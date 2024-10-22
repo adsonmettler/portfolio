@@ -236,3 +236,86 @@ function initCarousel() {
     showCard(currentIndex);
   });
 }
+
+
+
+// PROJECTS
+
+
+const projects = {
+  "projects": [
+      {
+          "id": 1,
+          "company": "Canada XP",
+          "role": "Web designer",
+          "year": 2024,
+          "image": "images/canadianxp-image-card-2x3.png",
+          "link": "https://www.canadaxp.com"
+      },
+      {
+          "id": 2,
+          "company": "Bibliotheca",
+          "role": "Marketing Campaign Specialist",
+          "year": 2024,
+          "image": "images/bibliotheca.jpg",
+          "link": "https://www.bibliotheca.com"
+      },
+      {
+          "id": 3,
+          "company": "FortWerken",
+          "role": "Marketing Account Manager",
+          "year": 2023,
+          "image": "images/fortwerken.jpg",
+          "link": "https://www.fortwerken.com"
+      },
+      {
+          "id": 4,
+          "company": "Fala Fono",
+          "role": "Web designer",
+          "year": 2020,
+          "image": "images/fala-fono.jpg",
+          "link": "https://www.falafono.com"
+      },
+      {
+          "id": 5,
+          "company": "Atlantic",
+          "role": "Marketing Account Manager",
+          "year": 2019,
+          "image": "images/atlantic.jpg",
+          "link": "https://www.atlantic.com"
+      },
+      {
+          "id": 6,
+          "company": "Data-Driven Marketing",
+          "role": "Web designer",
+          "year": 2021,
+          "image": "images/data-driven.jpg",
+          "link": "https://www.datadriven.com"
+      }
+  ]
+};
+
+const projectList = document.getElementById('project-list');
+
+projects.projects.forEach(project => {
+  const projectRow = document.createElement('div');
+  projectRow.classList.add('project-row');
+  projectRow.innerHTML = `
+      <div class="project-details">
+          <div class="project-index">[${project.id}]</div>
+          <div class="project-company">${project.company}</div>
+          <div class="project-role">Role // ${project.role}</div>
+          <div class="project-year">${project.year}</div>
+          <button class="live-project-button" onclick="window.open('${project.link}', '_blank')">[ View Project ]</button>
+      </div>
+      <img class="project-image" src="${project.image}" alt="${project.company} Project">
+  `;
+
+  projectRow.addEventListener('click', () => {
+      const img = projectRow.querySelector('.project-image');
+      img.style.display = img.style.display === 'none' ? 'block' : 'none';
+      img.scrollIntoView({ behavior: 'smooth' }); // Scroll to image smoothly
+  });
+
+  projectList.appendChild(projectRow);
+});
