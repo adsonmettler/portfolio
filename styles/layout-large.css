@@ -138,7 +138,7 @@
         display: grid;
         grid-template-rows: 1fr 1fr;
         max-width: 1440px;
-        padding: 1em;
+        padding: 0;
         margin: 2em auto;
         background: radial-gradient(circle at top left, rgb(255, 245, 180, 0.9), rgba(74, 219, 255, 0.3), rgba(74, 219, 255, 0.08), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32), rgb(0, 23, 32));
         border-radius: 9999px;
@@ -334,10 +334,11 @@
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        margin: 45px 0 0 0;
+        margin: 45px auto;
         margin-bottom: 20px;
         position: relative;
         z-index: 1;
+        max-width: 1440px;
     }
     
     .tabs {
@@ -451,7 +452,7 @@
             align-items: start;
             padding: 0 100px 0 100px;
             grid-gap: 20px;
-            max-width: 90%;
+            max-width: 1440px;
             margin: 0 auto; /* Centers the grid within its parent container */
             margin-bottom: 48px;
         }
@@ -537,8 +538,8 @@
 
 
     .testimonials-container {
-        width: 80%;
-        margin: 0 auto;
+        max-width: 960px;
+        margin: 5em auto 0 auto;
         text-align: center;
     }
     
@@ -551,6 +552,7 @@
 
     .testimonials-content p {
         font-size: 1rem;
+        line-height: 2rem;
     }
     
     .carousel-btn {
@@ -585,8 +587,8 @@
         font-style: italic;
         margin-bottom: 10px;
         color: white;
-        font-size: .9rem;
-        line-height: 1.4rem;
+        font-size: 1rem;
+        line-height: 1.8rem;
     }
 
     
@@ -603,8 +605,8 @@
     /*----------- FORM STYLING --------------*/
 
     form {
-        width: 52%;
-        margin: 5rem 0 0 25%;
+        max-width: 720px;
+        margin: 5rem auto;
         z-index: 10;
     }
 
