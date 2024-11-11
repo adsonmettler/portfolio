@@ -64,9 +64,22 @@ body {
 
 
 .hero-image {
-    width: 30%;
+    width: 400px;
     max-height: 400px;
     object-fit: cover;
     display: block;
-    margin: 0 auto;
+    margin: 2em auto;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .hero-image {
+        width: 80%;
+        max-height: 400px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
 }
