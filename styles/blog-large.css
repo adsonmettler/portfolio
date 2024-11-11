@@ -82,4 +82,10 @@ body {
         margin: 0 auto;
     }
 
+    .blog-header h1 {
+        width: 90%;
+        font-size: 2em;
+        margin: 0 auto;
+    }
+
 }
