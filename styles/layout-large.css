@@ -122,14 +122,16 @@
     
     .spaceman-hero {
         display: inline;
-        width: 15%;
-        right: 15%;
-        padding: 0 0 100px 0;
-        margin: 0 0 0 0;
-        position: relative;
+        width: 35%; /* Maintain size */
+        position: absolute; /* Ensure proper placement */
+        top: 20%; /* Center vertically */
+        right: 10%; /* Adjust position relative to container */
+        transform: translateY(-50%); /* Center vertically */
+        padding: 0; /* Remove unnecessary padding */
+        margin: 0; /* Remove unnecessary margins */
         z-index: 1;
-        animation: slideFade 1s ease-in-out 0.1s forwards, randomMove 6s ease-in-out 1.1s infinite; /* Added 'randomMove' animation */
-        opacity: 0;
+        animation: slideFade 1s ease-in-out 0.1s forwards, randomMove 6s ease-in-out 1.1s infinite;
+        opacity: 0; /* Ensure animation handles visibility */
     }
 
     
